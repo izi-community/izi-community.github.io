@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
   font-weight: 400;
   font-size: 1.125rem;
   margin: 0;
@@ -1252,10 +1252,10 @@ blockquote h6 {
 .ts-circle__md {
   border-radius: 50%;
   display: inline-block;
-  height: 6.25rem;
-  flex: 0 0 6.25rem;
+  height: 6.0rem;
+  flex: 0 0 6.0rem;
   overflow: hidden;
-  width: 6.25rem;
+  width: 6.0rem;
   position: relative;
 }
 
