@@ -2599,6 +2599,7 @@ E. Template Specific Elements
   border: 1px solid #ff555b;
 }
 
+#id-submit-google-form-message-2,
 #id-submit-google-form-message {
     font-size: 13px;
     font-weight: 300;
@@ -2607,6 +2608,7 @@ E. Template Specific Elements
     letter-spacing: 0.3px;
     display: none;
 }
+#id-submit-google-form-message-2.show,
 #id-submit-google-form-message.show {
     display: block;
 }
