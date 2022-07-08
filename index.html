@@ -1,274 +1,3130 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iZi Community</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://affixtheme.com/html/temly/demo-8/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta content="Join iZi Rooms with fun formats and engaging content." name="description" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="iZi Community" />
-    <meta property="og:description" content="Join iZi Rooms with fun formats and engaging content." />
-    <meta property="og:title" content="iZi Community!" />
-    <meta name="image" property="og:image" content="https://i.imgur.com/sqfq5EC.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <title>iZi Community</title>
+  <meta name=“description” content=“Nền tảng giải trí với kiến thức đầu tiên tại Việt Nam” />
+  <meta name=“robots” content=“max-image-preview:large” />
+  <meta property=“og:locale” content=“en_US” />
+  <meta property=“og:site_name” content=“iZi Community” />
+  <meta property=“og:type” content=“website” />
+  <meta property=“og:title” content=“iZi Community” />
+  <meta property=“og:description” content=“Nền tảng giải trí với kiến thức đầu tiên tại Việt Nam” />
+  <meta property=“og:url” content=“https://izi.community” />
+  <meta name=“twitter:card” content=“summary” />
+  <meta name=“twitter:title” content=“iZi Community” />
+  <meta name=“twitter:description” content=“Nền tảng giải trí với kiến thức đầu tiên tại Việt Nam” />
+  <link rel='dns-prefetch' href='http://www.google.com/' />
+  <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+
+    .content__container {
+      overflow: hidden;
+      height: 91px;
+    }
+
+    .content__container__text {
+      display: inline;
+      float: left;
+      margin: 0;
+      font-weight: 700 !important;
+    }
+
+    .content__container__list {
+      text-align: left;
+      list-style: none;
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      padding-left: 16px;
+    }
+
+    .content__container__list__item {
+      list-style: none;
+      font-weight: 700 !important;
+    }
+
+    @-webkit-keyframes opacity {
+
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes change {
+
+      0%,
+      12.66%,
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      16.66%,
+      29.32% {
+        transform: translate3d(0, -25%, 0);
+      }
+
+      33.32%,
+      45.98% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      49.98%,
+      62.64% {
+        transform: translate3d(0, -75%, 0);
+      }
+
+      66.64%,
+      79.3% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      83.3%,
+      95.96% {
+        transform: translate3d(0, -25%, 0);
+      }
+    }
+
+    @keyframes opacity {
+
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes change {
+
+      0%,
+      12.66%,
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      16.66%,
+      29.32% {
+        transform: translate3d(0, -25%, 0);
+      }
+
+      33.32%,
+      45.98% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      49.98%,
+      62.64% {
+        transform: translate3d(0, -75%, 0);
+      }
+
+      66.64%,
+      79.3% {
+        transform: translate3d(0, -50%, 0);
+      }
+
+      83.3%,
+      95.96% {
+        transform: translate3d(0, -25%, 0);
+      }
+    }
+
+    .with-izi {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 8px !important;
+      margin-top: 48px;
+    }
+
+    .with-izi span {
+      font-weight: bold !important;
+      padding: 2px 6px 2px 6px;
+      background: #ff5050;
+      border-radius: 4px;
+      color: #fff;
+      font-family: 'Montserrat';
+      font-size: 13px !important;
+    }
+
+    .with-izi.none {
+      margin-top: 24px !important;
+      margin-bottom: 0 !important;
+    }
+
+    .with-izi span.none {
+      color: #ff5050;
+      background: none;
+    }
+
+    .with-izi-result {
+      color: #2b2b2b;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 26px;
+      /* text-align: center; */
+    }
+
+    .with-izi-result p {
+      display: inline-block;
+      font-weight: 800 !important;
+      font-family: 'Montserrat';
+      padding: 0;
+      margin: 0;
+      color: #ff5050;
+      line-height: 32px;
+
+      transition: background-size 0.9s cubic-bezier(.15, .75, .4, 1), opacity 0.25s ease;
+      background-position: left 90%;
+    }
+
+    .tablink-container {
+
+      padding: 5px;
+    }
+
+    .tablinks ul li {}
+
+    .tablinks ul li p {
+      color: #222;
+      font-weight: 500 !important;
+      font-size: 18px;
+    }
+
+    .tablink-item.icon img {
+      min-width: 50px !important;
+      width: 50px !important;
+      max-width: 50px !important;
+    }
+
+    .tablink-item.top1 {}
+
+    .tablink-item.top1 h5 {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .tablink-item.top2 h5 {
+
+      font-weight: 500;
+      font-size: 22px !important;
+    }
+
+    .tablink-item.text {
+
+      line-height: 1.75em;
+    }
+
+    .tab-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .tabcontent img {
+      margin-top: 25px;
+      margin-left: 50px;
+      max-width: 400px;
+      width: 400px !important;
+      animation: blurIn 1000ms ease-in-out -500ms;
+    }
+
+    .tab {
+      display: flex;
+    }
+
+    .tablinks {
+      border-radius: 5px;
+    }
+
+    .tab>div {
+      margin-bottom: 15px;
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 22px 22px 32px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 17px;
+      -webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+      transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    /* Change background color of buttons on hover */
+    .tab>div:first-child:hover {
+      background-color: #fff4f4;
+    }
+
+    .tab>div:not(first-child):hover {
+      background-color: rgba(216, 237, 227, 0.25);
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab>div:first-child.active {
+      background-color: #fff4f4;
+    }
+
+    .tab>div:not(first-child).active {
+      background-color: rgba(216, 237, 227, 0.25);
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0 12px;
+      width: 55%;
+      height: auto;
+    }
+
+    .tab .tablinks:not(:first-child) .tablink-item.icon img {
+      box-shadow: 0 0 0 15px rgba(52, 181, 123, 0.2);
+      border-radius: 50%;
+    }
+
+    .tab .tablinks:first-child .tablink-item.icon img {
+      box-shadow: 0 0 0 15px rgba(254, 84, 84, 0.2);
+      border-radius: 50%;
+    }
+
+    .tab .tablinks.active .tablink-item.icon img {
+      animation: hoverF 2500ms ease-in-out infinite -500ms;
+    }
+
+    .cd-container li {
+      display: inline-block;
+      font-size: 56px;
+      list-style-type: none;
+      text-transform: uppercase;
+      color: #222;
+    }
+
+    .cd-container li span {
+      display: block;
+      font-size: 56px;
+      font-weight: 800 !important;
+      color: #222;
+    }
+
+    .cd-container li span:after {
+      content: ":";
+      padding: 0 8px;
+    }
+
+    .cd-container li:last-child span:after {
+      content: "";
+    }
+
+    .cd ul {
+      margin-left: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    .main-content ul {
+      margin-left: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    body[data-form-style="minimal"] .minimal-form-input {
+      max-width: 300px !important;
+      display: inline-block !important;
+      margin-top: -25px !important;
+    }
+
+    .nectar-cta[data-style="material"] .link_wrap .link_text {
+      font-weight: 700;
+      letter-spacing: -0.65px;
+    }
+
+    .desktop-hide {
+      display: none;
+    }
+
+    body[data-form-style=minimal] .minimal-form-input.has-text input {
+      color: #fff !important;
+    }
+
+    body[data-form-style=minimal] input[type=text] {
+      background-color: #ffffff0d !important;
+    }
+
+    input[type=text] {
+      color: #fff !important;
+    }
+
+    .sendgrid_mc_fields {
+      display: inline-block !important;
+      width: 300px !important;
+    }
+
+    .sendgrid_mc_button_div {
+      display: inline-block !important;
+    }
+
+    .sendgrid_mc_button {
+      width: 150px !important;
+      margin: 10px 0px 0px 10px !important;
+    }
+
+    .sendgrid_widget_text {
+      color: #fff !important;
+    }
+
+    .sendgrid_widget_success {
+      color: #fff !important;
+      font-size: 12px !important;
+    }
+
+    .sendgrid_mc_label_div {
+      display: none !important;
+    }
+
+    body[data-form-submit=regular] .container-wrap input[type=submit] {
+      font-size: 15px !important;
+      letter-spacing: -0.5px !important;
+      font-weight: 700 !important;
+      text-transform: none !important;
+      font-family: 'Montserrat' !important;
+    }
+
+    div[data-style=minimal_small] .toggle>h3:before {
+      background-color: #fff !important;
+    }
+
+    .toggles[data-style="minimal_small"] .toggle>h3 a {
+      font-size: 16px !important;
+      color: #2b2b2b !important;
+      letter-spacing: -0.5px !important;
+      font-weight: 500 !important;
+      text-transform: none !important;
+      font-family: 'Montserrat' !important;
+    }
+
+    div.nectar_food_menu_item h3 {
+      font-size: 18px !important;
+      color: #2b2b2b !important;
+    }
+
+    .network-visualization {
+      max-width: 525px !important;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .matrix {
+      max-width: 475px !important;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .email-signup {
+      max-width: 425px !important;
+    }
+
+    div.nectar_food_menu_item h6 {
+      font-size: 14px !important;
+      color: #2b2b2b !important;
+      letter-spacing: -0.5px !important;
+      font-weight: 700 !important;
+      text-transform: none !important;
+      font-family: 'Montserrat' !important;
+    }
+
+    .item_description {
+      color: #2b2b2b !important;
+      letter-spacing: -0.45px !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      font-family: 'Montserrat';
+    }
+
+    .tabbed[data-style=minimal_alt]>ul li:not(.cta-button) a {
+      font-weight: 700;
+      letter-spacing: -0.25px;
+      color: #2b2b2b !important;
+    }
+
+    .tabbed[data-style=minimal_alt]>ul li:not(.cta-button) a.active-tab {
+      font-weight: 700;
+      letter-spacing: -0.25px;
+      color: #2b2b2b !important;
+    }
+
+    .ent-block {
+      margin-bottom: 5px !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .mobile-hide {
+        display: none;
+      }
+
+      .desktop-hide {
+        display: block;
+      }
+
+      .tabbed[data-style=minimal_alt]>ul li:not(.cta-button) a {
+        font-size: 14px !important;
+      }
+
+      .tabbed[data-style=minimal_alt]>ul li:not(.cta-button) a.active-tab {
+        font-size: 14px !important;
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/1pegsrlg/bjbkt.css" media="all" />
+  <style id='salient-social-inline-css' type='text/css'>
+    .sharing-default-minimal .nectar-love.loved,
+    body .nectar-social[data-color-override="override"].fixed>a:before,
+    body .nectar-social[data-color-override="override"].fixed .nectar-social-inner a,
+    .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:hover {
+      background-color: #ff5050;
+    }
+
+    .nectar-social.hover .nectar-love.loved,
+    .nectar-social.hover>.nectar-love-button a:hover,
+    .nectar-social[data-color-override="override"].hover>div a:hover,
+    #single-below-header .nectar-social[data-color-override="override"].hover>div a:hover,
+    .nectar-social[data-color-override="override"].hover .share-btn:hover,
+    .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a {
+      border-color: #ff5050;
+    }
+
+    #single-below-header .nectar-social.hover .nectar-love.loved i,
+    #single-below-header .nectar-social.hover[data-color-override="override"] a:hover,
+    #single-below-header .nectar-social.hover[data-color-override="override"] a:hover i,
+    #single-below-header .nectar-social.hover .nectar-love-button a:hover i,
+    .nectar-love:hover i,
+    .hover .nectar-love:hover .total_loves,
+    .nectar-love.loved i,
+    .nectar-social.hover .nectar-love.loved .total_loves,
+    .nectar-social.hover .share-btn:hover,
+    .nectar-social[data-color-override="override"].hover .nectar-social-inner a:hover,
+    .nectar-social[data-color-override="override"].hover>div:hover span,
+    .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:not(:hover) i,
+    .sharing-default-minimal .nectar-social[data-color-override="override"] .nectar-social-inner a:not(:hover) {
+      color: #ff5050;
+    }
+
+    .fxt-socials {
+      display: flex;
+      padding: 0 24px;
+    }
+
+    .fxt-socials ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .fxt-socials ul li {
+      list-style: none;
+      width: 50px;
+      height: 50px;
+      background: #262626;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+    }
+
+    .footer {
+      margin-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .fxt-socials ul li i {
+      font-size: 20px;
+      color: white;
+
+    }
+
+    #submit-to-google-sheet-2 input,
+    #submit-to-google-sheet-2 textarea {
+      border: 2px solid #eee;
+      border-radius: 8px;
+      background: white;
+      color: #222 !important;
+      font-family: 'Montserrat';
+      font-weight: 600;
+    }
+
+    #submit-to-google-sheet-2 .form-group {
+      margin-bottom: 16px;
+    }
+
+    #submit-to-google-sheet-2 input:focus,
+    #submit-to-google-sheet-2 textarea:focus {
+      border-color: #222;
+    }
+
+    #id-submit-google-form-message-2 {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/efwrxjsy/w2f4.css" media="all" />
+  <script src='./wp-content/cache/wpfc-minified/2mx1r8hl/rsxe.js' type="text/javascript"></script>
+  <style id='main-styles-inline-css' type='text/css'>
+    html:not(.page-trans-loaded) {
+      background-color: #ffffff;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/1ypqaas2/dglps.css" media="all" />
+  <style id='dynamic-css-inline-css' type='text/css'>
+    @media only screen and (min-width:1000px) {
+      body #ajax-content-wrap.no-scroll {
+        min-height: calc(100vh - 72px);
+        height: calc(100vh - 72px) !important;
+      }
+    }
+
+    @media only screen and (min-width:1000px) {
+
+      #page-header-wrap.fullscreen-header,
+      #page-header-wrap.fullscreen-header #page-header-bg,
+      html:not(.nectar-box-roll-loaded) .nectar-box-roll>#page-header-bg.fullscreen-header,
+      .nectar_fullscreen_zoom_recent_projects,
+      #nectar_fullscreen_rows:not(.afterLoaded)>div {
+        height: calc(100vh - 71px);
+      }
+
+      .wpb_row.vc_row-o-full-height.top-level,
+      .wpb_row.vc_row-o-full-height.top-level>.col.span_12 {
+        min-height: calc(100vh - 71px);
+      }
+
+      html:not(.nectar-box-roll-loaded) .nectar-box-roll>#page-header-bg.fullscreen-header {
+        top: 72px;
+      }
+
+      .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),
+      .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container {
+        height: calc(100vh - 70px) !important;
+      }
+
+      .admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded),
+      .admin-bar .nectar-slider-wrap[data-fullscreen="true"]:not(.loaded) .swiper-container {
+        height: calc(100vh - 70px - 32px) !important;
+      }
+    }
+
+    body {
+      background-position: 0 0;
+      background-repeat: repeat;
+      background-color: #f2f2f2 !important;
+      background-attachment: scroll;
+      background-size: cover;
+      -webkit-background-size: cover;
+    }
+
+    .nectar-shape-divider-wrap {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 150px;
+      z-index: 3;
+      transform: translateZ(0);
+    }
+
+    .post-area.span_9 .nectar-shape-divider-wrap {
+      overflow: hidden;
+    }
+
+    .nectar-shape-divider-wrap[data-front="true"] {
+      z-index: 50;
+    }
+
+    .nectar-shape-divider-wrap[data-style="waves_opacity"] svg path:first-child {
+      opacity: 0.6;
+    }
+
+    .nectar-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(1),
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
+      opacity: 0.15;
+    }
+
+    .nectar-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(2),
+    .nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
+      opacity: 0.3;
+    }
+
+    .nectar-shape-divider {
+      width: 100%;
+      left: 0;
+      bottom: -1px;
+      height: 100%;
+      position: absolute;
+    }
+
+    .nectar-shape-divider-wrap.no-color .nectar-shape-divider {
+      fill: #fff;
+    }
+
+    @media only screen and (max-width:999px) {
+      .nectar-shape-divider-wrap:not([data-using-percent-val="true"]) .nectar-shape-divider {
+        height: 75%;
+      }
+
+      .nectar-shape-divider-wrap[data-style="clouds"]:not([data-using-percent-val="true"]) .nectar-shape-divider {
+        height: 55%;
+      }
+    }
+
+    @media only screen and (max-width:690px) {
+      .nectar-shape-divider-wrap:not([data-using-percent-val="true"]) .nectar-shape-divider {
+        height: 33%;
+      }
+
+      .nectar-shape-divider-wrap[data-style="clouds"]:not([data-using-percent-val="true"]) .nectar-shape-divider {
+        height: 33%;
+      }
+    }
+
+    #ajax-content-wrap .nectar-shape-divider-wrap[data-height="1"] .nectar-shape-divider,
+    #ajax-content-wrap .nectar-shape-divider-wrap[data-height="1px"] .nectar-shape-divider {
+      height: 1px;
+    }
+
+    .wpb_column[data-border-radius="3px"]>.vc_column-inner,
+    .wpb_column[data-border-radius="3px"]>.vc_column-inner>.column-bg-overlay-wrap,
+    .wpb_column[data-border-radius="3px"]>.vc_column-inner>.column-image-bg-wrap[data-bg-animation="zoom-out-reveal"],
+    .wpb_column[data-border-radius="3px"]>.vc_column-inner>.column-image-bg-wrap .column-image-bg,
+    .wpb_column[data-border-radius="3px"]>.vc_column-inner>.column-image-bg-wrap[data-n-parallax-bg="true"] {
+      border-radius: 3px;
+    }
+
+    .img-with-aniamtion-wrap[data-border-radius="none"] .img-with-animation,
+    .img-with-aniamtion-wrap[data-border-radius="none"] .hover-wrap {
+      border-radius: none;
+    }
+
+    @media only screen and (max-width:690px) {
+      .img-with-aniamtion-wrap.margin_left_phone_0px {
+        margin-left: 0 !important;
+      }
+    }
+
+    @media only screen and (max-width:690px) {
+      .img-with-aniamtion-wrap.margin_right_phone_6pct {
+        margin-right: 6% !important;
+      }
+    }
+
+    @media only screen and (max-width:690px) {
+      .wpb_row .wpb_column.child_column.padding-4-percent_phone>.vc_column-inner {
+        padding: calc(690px * 0.04);
+      }
+    }
+
+    .screen-reader-text,
+    .nectar-skip-to-content:not(:focus) {
+      border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute !important;
+      width: 1px;
+      word-wrap: normal !important;
+    }
+
+    /* footer start */
+    #footer-outer #footer-widgets .widget h4 {
+      font-size: 14px !important;
+    }
+
+    .accordions-head {
+      background: #fff none repeat scroll 0 0 !important;
+    }
+
+    .accordions-head-title {
+      color: #9d9d9d !important;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: DIN Next LT Pro;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .accordions .accordion-content {
+      padding: 20px !important;
+    }
+
+    .store-icons i {
+      color: grey;
+      font-size: 42px !important;
+      width: 50px !important;
+    }
+
+    .store-icons i:hover {
+      color: black;
+    }
+
+    #footer-outer[data-link-hover="underline"] #footer-widgets .textwidget a:not(.nectar-button) {
+      background-image: none !important;
+    }
+
+    .foot-menu-title {
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+      font-size: 14px !important;
+      font-weight: 700 !important;
+    }
+
+    .foot-menu-link {
+      letter-spacing: -0.25px !important;
+      font-size: 16px !important;
+      font-weight: 300 !important;
+      line-height: 32px !important;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      #footer-widgets[data-cols="5"] .container .row>div:first-child {
+        width: 28% !important;
+      }
+
+      #footer-outer .row {
+        padding: 75px 0px 0px 0px !important;
+      }
+
+      #ajax-content-wrap #footer-outer #copyright {
+        padding-top: 0px !important;
+        margin-bottom: 20px !important;
+      }
+    }
+
+    @media only screen and (max-width: 690px) {
+      body #footer-outer #copyright .col ul {
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      #footer-outer #copyright p {
+        text-align: center !important;
+      }
+
+      #footer-outer #copyright .col ul {
+        float: none !important;
+      }
+
+      #footer-outer #copyright li {
+        display: inline-block !important;
+        float: none !important;
+      }
+    }
+
+    /* footer end */
+    @font-face {
+      font-family: 'DIN Next LT Pro';
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Bold.eot');
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Boldd41d.eot?#iefix') format('embedded-opentype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Bold.woff2') format('woff2'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Bold.woff') format('woff'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Bold.ttf') format('truetype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'DIN Next LT Pro';
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Medium.eot');
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Medium.woff2') format('woff2'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Medium.woff') format('woff'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Medium.ttf') format('truetype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'DIN Next LT Pro';
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Italic.eot');
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Italic.woff2') format('woff2'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Italic.woff') format('woff'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Italic.ttf') format('truetype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Italic.svg#DINNextLTPro-Italic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'DIN Next LT Pro';
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Heavy.eot');
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Heavyd41d.eot?#iefix') format('embedded-opentype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Heavy.woff2') format('woff2'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Heavy.woff') format('woff'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Heavy.ttf') format('truetype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Heavy.svg#DINNextLTPro-Heavy') format('svg');
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'DIN Next LT Pro';
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Regular.eot');
+      src: url('./wp-content/uploads/2019/11/DINNextLTPro-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Regular.woff2') format('woff2'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Regular.woff') format('woff'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Regular.ttf') format('truetype'),
+        url('./wp-content/uploads/2019/11/DINNextLTPro-Regular.svg#DINNextLTPro-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 400 !important;
+      letter-spacing: -0.35px !important;
+    }
+
+    a {
+      font-family: 'Montserrat', sans-serif !important;
+      letter-spacing: -0.3px !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 900 !important;
+      letter-spacing: -0.75px !important;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 900 !important;
+      letter-spacing: -0.75px !important;
+    }
+
+    h1 {
+      font-weight: 900 !important;
+    }
+
+    h2 {
+      font-weight: 900 !important;
+    }
+
+    h3 {
+      font-weight: 900 !important;
+    }
+
+    h6 {
+      font-weight: 400 !important;
+      letter-spacing: -0.3px !important;
+    }
+
+    #page-header-wrap {
+      display: none !important;
+    }
+
+    #top nav>ul>.megamenu>.sub-menu {
+      padding: 15px 0 !important;
+      width: 108.8% !important;
+      left: -4.4% !important;
+    }
+
+    #header-outer .sf-menu li ul li a {
+      text-align: center !important;
+    }
+
+    #header-outer #top nav>ul>.megamenu>ul>li {
+      text-align: center !important;
+      float: none !important;
+    }
+
+    #header-outer #top nav>ul>.megamenu:hover ul li {
+      text-align: center !important;
+    }
+
+    body:not([data-header-format="left-header"]) #header-outer #top nav>ul>.megamenu>ul ul .current-menu-item>a {
+      text-align: center !important;
+    }
+
+    #top nav>ul>.megamenu>.sub-menu>li a,
+    body #top nav>ul>.megamenu>.sub-menu>li a {
+      text-align: center !important;
+      float: none !important;
+    }
+
+    .post-area .bold {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+    }
+
+    .post-area strong {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+    }
+
+    .post-area b {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+    }
+
+    .post-area body i {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+      font-style: italic;
+    }
+
+    .post-area body em {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+    }
+
+    .post-area i {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700 !important;
+      font-style: italic;
+    }
+
+    .excerpt {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 300 !important;
+    }
+
+    body[data-button-style^="rounded"].single .heading-title[data-header-style="default_minimal"] .meta-category a {
+      border: none !important;
+    }
+
+    body #top nav .sf-menu ul .current-menu-item>a {
+      font-weight: 700 !important;
+      font-size: 18px !important;
+    }
+
+    #top .sf-menu li ul li a {
+      font-weight: 700 !important;
+      font-size: 18px !important;
+    }
+
+    .nectar-highlighted-text em {
+      line-height: 0.7em !important;
+    }
+
+    .blog-recent[data-style="minimal"] .meta {
+      display: none !important;
+    }
+
+    .blog-recent[data-style="list_featured_first_row"] .featured .post-featured-img {
+      padding-bottom: 0px !important;
+      height: 300px !important;
+    }
+
+    .blog-recent[data-style="list_featured_first_row"] .small img {
+      height: 70px;
+      overflow: hidden !important;
+    }
+
+    .comments-section {
+      display: none !important;
+    }
+
+    body.material .post .content-inner {
+      max-width: 650px !important;
+      margin: auto !important;
+    }
+
+    form label {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 400 !important;
+    }
+
+    body[data-form-submit="regular"] .container-wrap input[type=submit] {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 900 !important;
+    }
+
+    .nectar-button span {
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 900 !important;
+    }
+
+    .get-started a {
+      font-weight: bold !important;
+      text-transform: uppercase !important;
+      font-size: 15px !important;
+      letter-spacing: 1px !important;
+      height: 13px !important;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.20) !important;
+    }
+
+    .get-started a:hover {
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0) !important;
+      opacity: 1 !important;
+    }
+
+    #boxed {
+      box-shadow: none !important;
+    }
+
+    .wpcf7 .wpcf7-response-output {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    div.wpcf7-mail-sent-ok {
+      border: 3px solid #9f4ebf !important;
+    }
+
+    .select2-choice {
+      background: #fff !important;
+    }
+
+    .mobile-show {
+      display: none !important;
+    }
+
+    .desktop-show {
+      display: block !important;
+    }
+
+    #top .span_9>.slide-out-widget-area-toggle a.using-label .label {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    #slide-out-widget-area.fullscreen .inner li a {
+      opacity: 1 !important;
+    }
+
+    @media only screen and (min-width: 1300px) {
+      .entry-title {
+        font-size: 54px !important;
+        max-width: 650px !important;
+        line-height: 65px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      .entry-title {
+        font-size: 54px !important;
+        max-width: 650px !important;
+        line-height: 65px !important;
+      }
+    }
+
+    @media only screen and (max-width: 999px) {
+      .mobile-show {
+        display: block !important;
+      }
+
+      .desktop-show {
+        display: none !important;
+      }
+    }
+
+    @media only screen and (max-width: 690px) {
+
+      .logo-grid .vc_row-fluid .vc_col-sm-2:not([class*="vc_col-xs"]),
+      body .vc_row-fluid.full-width-content .vc_col-sm-2:not([class*="vc_col-xs"]) {
+        width: 33% !important;
+      }
+
+      .nectar-cta[data-style="arrow-animation"] .link_wrap .link_text {
+        width: 232px !important;
+      }
+    }
+
+    .addtocalendar var {
+      display: none
+    }
+
+    .addtocalendar {
+      position: relative;
+      display: inline-block;
+      background: transparent !important
+    }
+
+    .atcb-link {
+      display: block;
+      outline: none !important;
+      cursor: pointer
+    }
+
+    .atcb-link:focus~ul,
+    .atcb-link:active~ul,
+    .atcb-list:hover {
+      visibility: visible
+    }
+
+    .atcb-list {
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 170px;
+      z-index: 900
+    }
+
+    .atcb-list,
+    .atcb-item {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #fff
+    }
+
+    .atcb-item {
+      float: none;
+      text-align: left
+    }
+
+    .atcb-item-link {
+      text-decoration: none;
+      outline: none;
+      display: block
+    }
+
+    .atcb-item.hover,
+    .atcb-item:hover {
+      position: relative;
+      z-index: 900;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none
+    }
+
+    .atc-style-blue .atcb-link,
+    .atc-style-blue .atcb-link:hover,
+    .atc-style-blue .atcb-link:active,
+    .atc-style-blue .atcb-link:focus {
+      margin: 0;
+      padding: 3px 15px 1px 15px;
+      color: #fff;
+      font-size: 15px;
+      text-decoration: none;
+      outline: none;
+      vertical-align: middle;
+      background: #5844c1;
+      box-shadow: 0 0 40px rgba(0, 0, 0, .13) inset;
+      border-radius: 4px;
+      zoom: 1
+    }
+
+    .atc-style-blue .atcb-list {
+      width: 170px;
+      border: 1px solid #bababa;
+      border-radius: 2px;
+      box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.11);
+    }
+
+    .atc-style-blue .atcb-list,
+    .atc-style-blue .atcb-item {
+      background: #fff;
+      color: #000
+    }
+
+    .atc-style-blue .atcb-item,
+    .atc-style-blue .atcb-item-link {
+      line-height: 1.3em font-weight:400 !important;
+      vertical-align: middle;
+      zoom: 1
+    }
+
+    .atc-style-blue .atcb-item-link,
+    .atc-style-blue .atcb-item-link:hover,
+    .atc-style-blue .atcb-item-link:active,
+    .atc-style-blue .atcb-item-link:focus {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400 !important;
+      text-decoration: none;
+      outline: none;
+      padding: 5px 15px
+    }
+
+    .atc-style-blue .atcb-item-link:hover,
+    .atc-style-blue .atcb-item-link:active,
+    .atc-style-blue .atcb-item-link:focus {
+      color: #fff
+    }
+
+    .atc-style-blue .atcb-item.hover,
+    .atc-style-blue .atcb-item:hover {
+      background: #2b2b2b;
+    }
+  </style>
+  <link rel='stylesheet' id='salient-child-style-css' href='./wp-content/themes/salient-child/style0a8a.css?ver=13.0.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='redux-google-fonts-salient_redux-css'
+    href='https://fonts.googleapis.com/css?family=Roboto%3A700%7CCabin%3A700%2C400%2C500%2C400italic%7CKarla%3A400%7CLa+Belle+Aurore%3A400%7CPlayfair+Display%3A400&amp;subset=latin&amp;ver=1628094700'
+    type='text/css' media='all' />
+
+  <style type="text/css" data-type="vc_custom-css">
+    .border-text {
+      font-weight: 700;
+      font-style: normal;
+      color: #ff5050 !important;
+      font-family: 'Montserrat';
+      line-height: 80px;
+    }
+
+    .svg-number-cont {
+      width: 85px !important;
+      max-width: 85px !important;
+    }
+
+    .svg-number-cont-mobile {
+      display: none !important;
+    }
+
+    .svg-label-cont {
+      width: 125px !important;
+      max-width: 125px !important;
+    }
+
+    .new-label-cont {
+      width: 60px !important;
+      max-width: 60px !important;
+    }
+
+    .cc-list .nectar-hor-list-item .item-icon[data-size="small"] {
+      font-size: 12px !important;
+      background: #32ea73;
+      border-radius: 50px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+
+    .list-others .nectar-hor-list-item .item-icon[data-size="small"] {
+      font-size: 12px !important;
+      background: #32ea73;
+      border-radius: 50px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+
+    .cc-list .nectar-hor-list-item:nth-child(4) .item-icon[data-size="small"] {
+      background: #ffce50 !important;
+    }
+
+    .cc-list .nectar-hor-list-item:nth-child(5) .item-icon[data-size="small"] {
+      background: #ff5050 !important;
+    }
+
+    .nectar-hor-list-item .nectar-list-item {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .nectar-hor-list-item {
+      padding: 10px 0px !important;
+    }
+
+    .office-logos-desktop {
+      max-width: 650px !important;
+    }
+
+    .new-label {
+      max-width: 100px !important;
+      width: 100px !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .border-text {
+        -webkit-text-stroke: .035em #2b2b2b;
+      }
+
+      .svg-number-cont {
+        display: none !important;
+      }
+
+      .svg-number-cont-mobile {
+        display: block !important;
+        width: 65px !important;
+        max-width: 65px !important;
+      }
+
+      .office-img {
+        max-width: 225px !important;
+        width: 225px !important;
+        padding-left: 30px;
+      }
+
+      .office-logos-desktop {
+        display: none !important;
+      }
+    }
+  </style>
+  <style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1607539487362 {
+      border-top-width: 1px !important;
+      border-top-color: #474747 !important;
+      border-top-style: solid !important;
+    }
+
+    .vc_custom_1644952225092 {
+      border-top-width: 0px !important;
+      border-top-color: #666666 !important;
+      border-top-style: solid !important;
+    }
+
+    .vc_custom_1644951999504 {
+      border-top-width: 0px !important;
+      border-top-color: #666666 !important;
+      border-top-style: solid !important;
+    }
+
+    .vc_custom_1644952028416 {
+      border-top-width: 0px !important;
+      border-top-color: #666666 !important;
+      border-top-style: solid !important;
+    }
+
+    .vc_custom_1605212324313 {
+      border-top-width: 1px !important;
+      border-top-color: #474747 !important;
+      border-top-style: solid !important;
+    }
+  </style><noscript>
+    <style>
+      .wpb_animate_when_almost_visible {
+        opacity: 1;
+      }
+    </style>
+  </noscript>
 </head>
 
-<body>
-    <div id="preloader"></div>
-    <!-- Page Loader End -->
-    <div class="wrapper">
-        <div class="ofcanvas-triger btn-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+<body class="page-template-default page page-id-5475 material wpb-js-composer js-comp-ver-6.2.0 vc_responsive"
+  data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off"
+  data-boxed-style="1" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutExpo"
+  data-cad="1350" data-megamenu-width="contained" data-aie="fade-in" data-ls="fancybox" data-apte="standard"
+  data-hhun="1" data-fancy-form-rcs="1" data-form-style="minimal" data-form-submit="regular" data-is="minimal"
+  data-button-style="rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="40px"
+  data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="true"
+  data-full-width-header="false" data-slide-out-widget-area="true" data-slide-out-widget-area-style="fullscreen"
+  data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1"
+  data-ext-responsive="true" data-ext-padding="90" data-header-resize="0" data-header-color="custom"
+  data-transparent-header="false" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="1"
+  data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false">
+  <div class="ocm-effect-wrap">
+    <div class="ocm-effect-wrap-inner">
+      <div id="ajax-loading-screen" data-disable-mobile="1" data-disable-fade-on-click="0" data-effect="standard"
+        data-method="standard">
+        <div class="loading-icon none">
+          <div class="material-icon">
+            <div class="spinner">
+              <div class="right-side">
+                <div class="bar"></div>
+              </div>
+              <div class="left-side">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="spinner color-2">
+              <div class="right-side">
+                <div class="bar"></div>
+              </div>
+              <div class="left-side">
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Main Body Area Start Here -->
-        <div class="fxt-template has-animation">
-            <div class="fxt-main-content">
-                <ul id="module" class="fxt-small-shap">
-                    <li class="fxt-shape-1">
-                        <svg width="49.031" height="49.031" viewBox="0 0 49.031 49.031">
-                            <path fill="#fff" opacity="0.3" fill-rule="evenodd"
-                                d="M47.036,34.002 C45.940,34.002 45.051,33.113 45.051,32.016 C45.051,30.920 45.940,30.031 47.036,30.031 C48.133,30.031 49.022,30.920 49.022,32.016 C49.022,33.113 48.133,34.002 47.036,34.002 ZM47.036,18.987 C45.940,18.987 45.051,18.098 45.051,17.002 C45.051,15.905 45.940,15.016 47.036,15.016 C48.133,15.016 49.022,15.905 49.022,17.002 C49.022,18.098 48.133,18.987 47.036,18.987 ZM47.036,3.973 C45.940,3.973 45.051,3.084 45.051,1.987 C45.051,0.891 45.940,0.002 47.036,0.002 C48.133,0.002 49.022,0.891 49.022,1.987 C49.022,3.084 48.133,3.973 47.036,3.973 ZM32.022,49.016 C30.925,49.016 30.036,48.127 30.036,47.031 C30.036,45.934 30.925,45.046 32.022,45.046 C33.118,45.046 34.007,45.934 34.007,47.031 C34.007,48.127 33.118,49.016 32.022,49.016 ZM32.022,34.002 C30.925,34.002 30.036,33.113 30.036,32.016 C30.036,30.920 30.925,30.031 32.022,30.031 C33.118,30.031 34.007,30.920 34.007,32.016 C34.007,33.113 33.118,34.002 32.022,34.002 ZM32.022,18.987 C30.925,18.987 30.036,18.098 30.036,17.002 C30.036,15.905 30.925,15.016 32.022,15.016 C33.118,15.016 34.007,15.905 34.007,17.002 C34.007,18.098 33.118,18.987 32.022,18.987 ZM32.022,3.973 C30.925,3.973 30.036,3.084 30.036,1.987 C30.036,0.891 30.925,0.002 32.022,0.002 C33.118,0.002 34.007,0.891 34.007,1.987 C34.007,3.084 33.118,3.973 32.022,3.973 ZM17.007,49.016 C15.911,49.016 15.022,48.127 15.022,47.031 C15.022,45.934 15.911,45.046 17.007,45.046 C18.104,45.046 18.993,45.934 18.993,47.031 C18.993,48.127 18.104,49.016 17.007,49.016 ZM17.007,34.002 C15.911,34.002 15.022,33.113 15.022,32.016 C15.022,30.920 15.911,30.031 17.007,30.031 C18.104,30.031 18.993,30.920 18.993,32.016 C18.993,33.113 18.104,34.002 17.007,34.002 ZM17.007,18.987 C15.911,18.987 15.022,18.098 15.022,17.002 C15.022,15.905 15.911,15.016 17.007,15.016 C18.104,15.016 18.993,15.905 18.993,17.002 C18.993,18.098 18.104,18.987 17.007,18.987 ZM17.007,3.973 C15.911,3.973 15.022,3.084 15.022,1.987 C15.022,0.891 15.911,0.002 17.007,0.002 C18.104,0.002 18.993,0.891 18.993,1.987 C18.993,3.084 18.104,3.973 17.007,3.973 ZM1.993,49.016 C0.896,49.016 0.007,48.127 0.007,47.031 C0.007,45.934 0.896,45.046 1.993,45.046 C3.089,45.046 3.978,45.934 3.978,47.031 C3.978,48.127 3.089,49.016 1.993,49.016 ZM1.993,34.002 C0.896,34.002 0.007,33.113 0.007,32.016 C0.007,30.920 0.896,30.031 1.993,30.031 C3.089,30.031 3.978,30.920 3.978,32.016 C3.978,33.113 3.089,34.002 1.993,34.002 ZM1.993,18.987 C0.896,18.987 0.007,18.098 0.007,17.002 C0.007,15.905 0.896,15.016 1.993,15.016 C3.089,15.016 3.978,15.905 3.978,17.002 C3.978,18.098 3.089,18.987 1.993,18.987 ZM1.993,3.973 C0.896,3.973 0.007,3.084 0.007,1.987 C0.007,0.891 0.896,0.002 1.993,0.002 C3.089,0.002 3.978,0.891 3.978,1.987 C3.978,3.084 3.089,3.973 1.993,3.973 ZM47.036,45.046 C48.133,45.046 49.022,45.934 49.022,47.031 C49.022,48.127 48.133,49.016 47.036,49.016 C45.940,49.016 45.051,48.127 45.051,47.031 C45.051,45.934 45.940,45.046 47.036,45.046 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-2">
-                        <svg width="11.969" height="12" viewBox="0 0 11.969 12">
-                            <path fill="#62f68f" opacity="1" fill-rule="evenodd"
-                                d="M11.963,2.057 C9.223,-0.689 4.782,-0.689 2.043,2.057 C-0.696,4.804 -0.696,9.256 2.043,12.003 L11.963,2.057 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-3">
-                        <svg width="69.969" height="70.031" viewBox="0 0 69.969 70.031">
-                            <path fill="#cb2026" opacity="1" fill-rule="evenodd"
-                                d="M6.415,32.565 L32.542,6.409 C41.098,-2.158 54.972,-2.158 63.529,6.409 L63.529,6.409 C72.086,14.975 72.086,28.864 63.529,37.430 L37.402,63.586 C28.845,72.153 14.971,72.153 6.415,63.586 L6.415,63.586 C-2.142,55.020 -2.142,41.131 6.415,32.565 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-4">
-                        <svg width="95.062" height="95.062" viewBox="0 0 95.062 95.062">
-                            <path fill="#f67162" opacity="1" fill-rule="evenodd"
-                                d="M93.623,8.306 L40.314,61.616 C38.407,63.523 35.315,63.523 33.408,61.616 C31.500,59.709 31.500,56.617 33.408,54.710 L86.717,1.400 C88.624,-0.507 91.716,-0.507 93.623,1.400 C95.530,3.307 95.530,6.399 93.623,8.306 ZM8.310,93.620 C6.403,95.527 3.311,95.527 1.404,93.620 C-0.503,91.712 -0.503,88.620 1.404,86.713 L14.728,73.389 C16.635,71.482 19.727,71.482 21.634,73.389 C23.542,75.296 23.542,78.388 21.634,80.296 L8.310,93.620 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-5">
-                        <svg width="12" height="11.969" viewBox="0 0 12 11.969">
-                            <path fill="#62f68f" opacity="1" fill-rule="evenodd"
-                                d="M0.006,2.052 C2.745,-0.687 7.186,-0.687 9.926,2.052 C12.665,4.791 12.665,9.232 9.926,11.971 L0.006,2.052 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-6">
-                        <svg width="57" height="57" viewBox="0 0 57 57">
-                            <path fill="#f67162" opacity="1" fill-rule="evenodd"
-                                d="M0.943,51.433 L51.429,0.946 C52.703,-0.327 54.767,-0.327 56.041,0.946 L56.041,0.946 C57.314,2.220 57.314,4.285 56.041,5.558 L5.554,56.045 C4.281,57.318 2.216,57.318 0.943,56.045 L0.943,56.045 C-0.331,54.771 -0.331,52.707 0.943,51.433 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-7">
-                        <svg width="64.03" height="64" viewBox="0 0 64.03 64">
-                            <path fill="#cb2026" opacity="1" fill-rule="evenodd"
-                                d="M60.669,19.398 L47.106,32.953 C42.664,37.392 35.462,37.392 31.020,32.953 C26.578,28.513 26.578,21.316 31.020,16.877 L44.583,3.323 C49.025,-1.117 56.227,-1.117 60.669,3.323 C65.111,7.762 65.111,14.959 60.669,19.398 ZM19.393,60.648 C14.951,65.088 7.749,65.088 3.307,60.648 C-1.135,56.209 -1.135,49.012 3.307,44.573 L5.437,42.444 C9.879,38.004 17.081,38.004 21.523,42.444 C25.965,46.883 25.965,54.080 21.523,58.519 L19.393,60.648 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-8">
-                        <svg width="84" height="84" viewBox="0 0 84 84">
-                            <path fill="#fff" opacity="0.3" fill-rule="evenodd"
-                                d="M80.598,6.805 C78.718,6.805 77.195,5.281 77.195,3.402 C77.195,1.523 78.718,-0.001 80.598,-0.001 C82.477,-0.001 84.000,1.523 84.000,3.402 C84.000,5.281 82.477,6.805 80.598,6.805 ZM54.865,84.000 C52.986,84.000 51.463,82.477 51.463,80.598 C51.463,78.719 52.986,77.195 54.865,77.195 C56.745,77.195 58.268,78.719 58.268,80.598 C58.268,82.477 56.745,84.000 54.865,84.000 ZM54.865,58.268 C52.986,58.268 51.463,56.745 51.463,54.866 C51.463,52.987 52.986,51.463 54.865,51.463 C56.745,51.463 58.268,52.987 58.268,54.866 C58.268,56.745 56.745,58.268 54.865,58.268 ZM54.865,32.536 C52.986,32.536 51.463,31.013 51.463,29.134 C51.463,27.255 52.986,25.731 54.865,25.731 C56.745,25.731 58.268,27.255 58.268,29.134 C58.268,31.013 56.745,32.536 54.865,32.536 ZM54.865,6.804 C52.986,6.804 51.463,5.281 51.463,3.402 C51.463,1.523 52.986,-0.001 54.865,-0.001 C56.745,-0.001 58.268,1.523 58.268,3.402 C58.268,5.281 56.745,6.804 54.865,6.804 ZM29.134,84.000 C27.254,84.000 25.731,82.477 25.731,80.598 C25.731,78.719 27.254,77.195 29.134,77.195 C31.013,77.195 32.536,78.719 32.536,80.598 C32.536,82.477 31.013,84.000 29.134,84.000 ZM29.134,58.268 C27.254,58.268 25.731,56.745 25.731,54.866 C25.731,52.987 27.254,51.463 29.134,51.463 C31.013,51.463 32.536,52.987 32.536,54.866 C32.536,56.745 31.013,58.268 29.134,58.268 ZM29.134,32.536 C27.254,32.536 25.731,31.013 25.731,29.134 C25.731,27.255 27.254,25.731 29.134,25.731 C31.013,25.731 32.536,27.255 32.536,29.134 C32.536,31.013 31.013,32.536 29.134,32.536 ZM29.134,6.804 C27.254,6.804 25.731,5.281 25.731,3.402 C25.731,1.523 27.254,-0.001 29.134,-0.001 C31.013,-0.001 32.536,1.523 32.536,3.402 C32.536,5.281 31.013,6.804 29.134,6.804 ZM3.402,84.000 C1.522,84.000 -0.001,82.477 -0.001,80.598 C-0.001,78.719 1.522,77.195 3.402,77.195 C5.281,77.195 6.804,78.719 6.804,80.598 C6.804,82.477 5.281,84.000 3.402,84.000 ZM3.402,58.268 C1.522,58.268 -0.001,56.745 -0.001,54.866 C-0.001,52.987 1.522,51.463 3.402,51.463 C5.281,51.463 6.804,52.987 6.804,54.866 C6.804,56.745 5.281,58.268 3.402,58.268 ZM3.402,32.536 C1.522,32.536 -0.001,31.013 -0.001,29.134 C-0.001,27.255 1.522,25.731 3.402,25.731 C5.281,25.731 6.804,27.255 6.804,29.134 C6.804,31.013 5.281,32.536 3.402,32.536 ZM3.402,6.804 C1.522,6.804 -0.001,5.281 -0.001,3.402 C-0.001,1.523 1.522,-0.001 3.402,-0.001 C5.281,-0.001 6.804,1.523 6.804,3.402 C6.804,5.281 5.281,6.804 3.402,6.804 ZM80.598,25.731 C82.477,25.731 84.000,27.255 84.000,29.134 C84.000,31.013 82.477,32.536 80.598,32.536 C78.718,32.536 77.195,31.013 77.195,29.134 C77.195,27.255 78.718,25.731 80.598,25.731 ZM80.598,51.463 C82.477,51.463 84.000,52.987 84.000,54.866 C84.000,56.745 82.477,58.268 80.598,58.268 C78.718,58.268 77.195,56.745 77.195,54.866 C77.195,52.987 78.718,51.463 80.598,51.463 ZM80.598,77.195 C82.477,77.195 84.000,78.719 84.000,80.598 C84.000,82.477 82.477,84.000 80.598,84.000 C78.718,84.000 77.195,82.477 77.195,80.598 C77.195,78.719 78.718,77.195 80.598,77.195 Z" />
-                        </svg>
-                    </li>
-                    <li class="fxt-shape-9">
-                        <svg width="22" height="22" viewBox="0 0 22 22">
-                            <path fill="#f67162" opacity="1" fill-rule="evenodd"
-                                d="M5.897,21.990 L0.002,-0.009 L22.001,5.886 L5.897,21.990 Z" />
-                        </svg>
-                    </li>
-                </ul>
-                <svg class="fxt-shape-left" viewBox="0 0 491.031 544">
-                    <path fill="#431fbf" opacity="0.3" fill-rule="evenodd"
-                        d="M-10.010,72.546 L52.557,10.022 C65.918,-3.330 87.580,-3.330 100.941,10.022 L100.942,10.022 C114.303,23.374 114.303,45.021 100.942,58.373 L21.190,138.071 C11.146,148.108 11.146,164.381 21.190,174.418 L21.190,174.418 C31.234,184.455 47.518,184.455 57.562,174.418 L78.418,153.577 C89.660,142.342 107.886,142.342 119.128,153.577 L119.128,153.577 C130.369,164.811 130.369,183.025 119.128,194.259 L83.423,229.939 C69.417,243.936 69.417,266.629 83.423,280.625 L83.423,280.625 C97.429,294.622 97.429,317.315 83.423,331.311 L75.081,339.648 C62.549,352.171 62.549,372.475 75.081,384.998 L75.081,384.999 C87.613,397.522 107.930,397.522 120.462,384.999 L186.532,318.973 C199.617,305.897 220.832,305.897 233.916,318.973 L233.916,318.973 C247.001,332.049 247.001,353.249 233.916,366.325 L220.402,379.830 C205.198,395.024 205.198,419.657 220.402,434.851 L220.402,434.851 C235.606,450.045 260.256,450.045 275.460,434.851 L339.862,370.493 C356.909,353.458 384.547,353.458 401.594,370.493 L401.594,370.493 C418.641,387.528 418.641,415.148 401.594,432.183 L359.049,474.700 C347.623,486.118 347.623,504.630 359.049,516.049 L359.049,516.049 C370.475,527.467 389.000,527.467 400.426,516.049 L420.114,496.375 C436.331,480.168 462.625,480.168 478.843,496.375 L478.843,496.375 C495.061,512.581 495.061,538.857 478.843,555.064 L396.851,637.000 L-10.010,637.000 L-10.010,72.546 Z"
-                        class="cls-1" />
-                </svg>
-                <svg class="fxt-shape-middle" height="99vh" viewBox="0 0 815 908">
-                    <path fill="#431fbf" opacity="0.2" fill-rule="evenodd"
-                        d="M407.499,-0.000 C389.739,-0.000 371.979,4.587 356.065,13.762 L51.434,189.399 C19.607,207.750 0.000,241.663 0.000,278.363 L0.000,629.637 C0.000,666.337 19.607,700.251 51.434,718.601 L356.065,894.238 C371.979,903.413 389.739,908.001 407.499,908.001 C425.259,908.001 443.019,903.413 458.933,894.238 L763.564,718.601 C795.392,700.251 814.998,666.337 814.998,629.637 L814.998,278.363 C814.998,241.663 795.392,207.750 763.564,189.399 L458.933,13.762 C443.019,4.587 425.259,-0.000 407.499,-0.000" />
-                </svg>
-                <svg class="fxt-shape-right" viewBox="0 0 433 434">
-                    <path fill="#431fbf" opacity="0.3" fill-rule="evenodd"
-                        d="M521.000,329.382 L423.150,427.312 C414.262,436.207 399.851,436.207 390.963,427.312 L390.963,427.312 C382.075,418.416 382.075,403.994 390.963,395.098 L406.735,379.313 C413.668,372.375 413.668,361.125 406.735,354.187 L406.735,354.187 C399.802,347.248 388.561,347.248 381.629,354.187 L364.806,371.023 C359.342,376.491 350.484,376.491 345.020,371.023 L345.020,371.023 C339.556,365.555 339.556,356.689 345.020,351.221 L415.403,280.780 C422.976,273.201 422.976,260.914 415.403,253.335 L415.403,253.335 C407.831,245.756 395.553,245.756 387.981,253.335 L371.682,269.647 C364.808,276.527 353.664,276.527 346.790,269.647 L346.790,269.647 C339.917,262.768 339.917,251.615 346.790,244.735 L362.316,229.197 C370.494,221.013 370.494,207.744 362.316,199.560 L362.316,199.560 C354.139,191.376 340.881,191.376 332.704,199.560 L262.428,269.894 C252.829,279.501 237.265,279.501 227.666,269.894 L227.666,269.894 C218.066,260.286 218.066,244.710 227.666,235.103 L262.214,200.527 C271.220,191.512 271.220,176.898 262.214,167.883 L262.214,167.883 C253.207,158.869 238.604,158.869 229.597,167.883 L213.718,183.776 C205.659,191.841 192.593,191.841 184.535,183.776 L184.535,183.775 C176.476,175.710 176.476,162.634 184.535,154.568 L236.807,102.253 C245.387,93.666 245.387,79.743 236.807,71.156 L236.807,71.156 C228.227,62.569 214.316,62.569 205.736,71.156 L135.996,140.953 C124.548,152.410 105.987,152.410 94.539,140.953 L94.539,140.953 C83.091,129.495 83.091,110.919 94.539,99.461 L119.816,74.163 C130.601,63.369 130.601,45.870 119.816,35.077 L119.816,35.077 C109.032,24.283 91.547,24.283 80.762,35.077 L47.631,68.235 C36.728,79.147 19.051,79.147 8.148,68.235 L8.148,68.235 C-2.755,57.323 -2.755,39.632 8.148,28.720 L130.767,-94.000 L521.000,-94.000 L521.000,329.382 Z" />
-                </svg>
-                <div class="translate-zoomout-10 transition-100 transition-delay-2100">
-                    <div class="fxt-logo">
-                        <a href="#"><img src="/assets/img/logo.png" alt="Logo"></a>
+      </div>
+      <div id="boxed">
+        <div id="header-space" data-header-mobile-fixed='1'></div>
+        <div id="header-outer" data-has-menu="true" data-has-buttons="no" data-header-button_style="default"
+          data-using-pr-menu="false" data-mobile-fixed="1" data-ptnm="false" data-lhe="default"
+          data-user-set-bg="#ffffff" data-format="default" data-permanent-transparent="false" data-megamenu-rt="0"
+          data-remove-fixed="1" data-header-resize="0" data-cart="false" data-transparency-option="0"
+          data-box-shadow="none" data-shrink-num="6" data-using-secondary="0" data-using-logo="1" data-logo-height="40"
+          data-m-logo-height="32" data-padding="16" data-full-width="false" data-condense="false">
+          <div id="search-outer" class="nectar">
+            <div id="search">
+              <div class="container">
+                <div id="search-box">
+                  <div class="inner-wrap">
+                    <div class="col span_12">
+                      <form role="search" action="https://iZi.app/leaders/" method="GET">
+                        <input type="text" name="s" id="s" value="" aria-label="Search" placeholder="Search" />
+                        <span>Hit enter to search or ESC to close</span>
+                      </form>
                     </div>
+                    <!--/span_12-->
+                  </div>
+                  <!--/inner-wrap-->
                 </div>
-                <div class="translate-zoomout-10 transition-100 transition-delay-2400">
-                    <h1 class="fxt-main-title">WELCOME TO iZi!,<br /> We are uploading exciting content and lining up
-                        wonderful hosts for you…</h1>
+                <!--/search-box-->
+                <div id="close"><a href="#"><span class="screen-reader-text">Close Search</span>
+                    <span class="close-wrap"> <span class="close-line close-line1"></span> <span
+                        class="close-line close-line2"></span> </span> </a></div>
+              </div>
+              <!--/container-->
+            </div>
+            <!--/search-->
+          </div>
+          <!--/search-outer-->
+          <header id="top">
+            <div class="container">
+              <div class="row">
+                <div class="col span_3">
+                  <a id="logo" href="./index.html" data-supplied-ml-starting-dark="true"
+                    data-supplied-ml-starting="true" data-supplied-ml="true">
+                    <img class="stnd skip-lazy default-logo" width="642.12" height="208.82" alt="iZi"
+                      src="./assets/img/logo.png">
+                    <img class="mobile-only-logo skip-lazy" alt="iZi" width="642.12" height="208.82"
+                      src="./assets/img/logo.png" /> </a>
                 </div>
-                <div class="translate-zoomout-10 transition-100 transition-delay-2700">
-                    <p class="fxt-paragraph">This will take a few days. Stay tuned and explore our functional platform
-                        first-hand here.</p>
-                </div>
-                <div class="translate-zoomout-10 transition-100 transition-delay-3300">
-                    <div class="fxt-buttons">
-                        <a href="https://beta.izi.community" class="btn-toggle fxt-btn fxt-btn-ghost"
-                            id="triger-page-content">Explore on Desktop only</a>
-
-                    </div>
-                </div>
-                <div class="fxt-socials">
-                    <ul>
-                        <li class="fxt-facebook">
-                            <div class="translate-zoomout-10 transition-100 transition-delay-3600">
-                                <a href="https://www.facebook.com/izi.community" title="Facebook"><i
-                                        class="fab fa-facebook-f"></i></a>
-                            </div>
-                        </li>
-                        <li class="fxt-twitter">
-                            <div class="translate-zoomout-10 transition-100 transition-delay-3800">
-                                <a href="https://www.instagram.com/izi.community/" title="instagram"><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </li>
-                        <li class="fxt-google">
-                            <div class="translate-zoomout-10 transition-100 transition-delay-4000">
-                                <a href="https://www.youtube.com/channel/UCT3gRdZXIRmHoIXFHYdrP5Q" title="youtube"><i
-                                        class="fab fa-youtube"></i></a>
-                            </div>
-                        </li>
-                        <li class="fxt-linkedin">
-                            <div class="translate-zoomout-10 transition-100 transition-delay-4200">
-                                <a href="https://www.linkedin.com/company/izi-our-mind/" title="linkedin"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </li>
+                <!--/span_3-->
+                <div class="col span_9 col_last">
+                  <div class="slide-out-widget-area-toggle mobile-icon fullscreen" data-custom-color="false"
+                    data-icon-animation="simple-transform">
+                    <div> <a href="#sidewidgetarea" aria-label="Navigation Menu" aria-expanded="false"
+                        class="closed using-label">
+                        <i class="label">Menu</i><span aria-hidden="true"> <i class="lines-button x2"> <i
+                              class="lines"></i> </i> </span>
+                      </a></div>
+                  </div>
+                  <nav>
+                    <ul class="sf-menu">
+                      <li id="menu-item-3080"
+                        class="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-3080">
+                        <a href="././purpose/index.html"><span class="menu-title-text">Về iZi</span></a>
+                      </li>
+                      <li id="menu-item-3086"
+                        class="get-started menu-item menu-item-type-custom menu-item-object-custom button_solid_color menu-item-3086">
+                        <a href="https://joiniZi.app.link/xWHqZEXTGZ"><span class="menu-title-text">Liên hệ</span></a>
+                      </li>
                     </ul>
+                    <ul class="buttons sf-menu" data-user-set-ocm="off">
+                    </ul>
+                  </nav>
                 </div>
-                <div class="translate-zoomout-10 transition-100 transition-delay-4500">
-                    <div class="fxt-copyright">&copy; 2022 iZi — All Rights Reserved.</div>
-                </div>
+                <!--/span_9-->
+              </div>
+              <!--/row-->
             </div>
-            <div id="fxt-page-content" class="fxt-page-content">
-                <section class="fxt-about-wrap has-animation">
-                    <div class="container-fluid full-width">
-                        <div class="content-heading">
-                            <div class="translate-bottom delay-500">
-                                <h2 class="content-title">About Us</h2>
-                            </div>
-                        </div>
-                        <div class="translate-bottom delay-700">
-                            <p class="content-paragraph">iZi is a gamified open “school”, founded in Vietnam since 2021
-                                with 100K+ organic users in 66+ countries. With iZi:</p>
-                            <ul>
-                                <li>An expert or company can host a live broadcast to a large community and record it,
-                                    with fascinating gamification tools.</li>
-                                <li>
-                                    A student or working professional can join and interact dynamically in a live
-                                    broadcast or replay it asynchronously with friends.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="fxt-contact-wrap has-animation">
-                    <div class="container-fluid full-width">
-                        <div class="content-heading">
-                            <div class="translate-bottom delay-300">
-                                <h2 class="content-title">Contact Us</h2>
-                            </div>
-                        </div>
-                        <div class="fxt-contact-form-wrap">
-                            <form method="POST" id="submit-to-google-sheet-2">
-                                <div class="row">
-                                    <div class="col-lg-12 form-group">
-                                        <div class="translate-bottom delay-500">
-                                            <input type="text" class="form-control" placeholder="Full Name" name="name"
-                                                data-error="Name field is required" required>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 form-group">
-                                        <div class="translate-bottom delay-700">
-                                            <input type="email" class="form-control" placeholder="E-mail" name="email"
-                                                data-error="Email field is required" required>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                        
-                                    <div class="col-lg-12 form-group">
-                                        <div class="translate-bottom delay-1100">
-                                            <textarea name="message" id="form-message" class="form-control textarea"
-                                                placeholder="Your Message" cols="30" rows="4"
-                                                data-error="Message field is required" required></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 form-group">
-                                        <div class="translate-bottom delay-1300">
-                                            <button type="submit" id="id-submit-google-form-2"
-                                                class="fxt-btn fxt-btn-fill">
-                                                <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner" style="display: none;"></i>
-                                                SEND MESSAGE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-response" id="id-submit-google-form-message-2">
-                                    Your information has been submitted successfully
-                                </div>
-                            </form>
-                        </div>
-                        <div class="fxt-contact-address-wrap">
-                            <div class="translate-bottom delay-1600">
-                                <div class="fxt-address-box">
-                                    <div class="item-icon">
-                                        <i class="flaticon-placeholder"></i>
-                                    </div>
-                                    <div class="item-content">
-                                        <h3 class="item-title">Address</h3>
-                                        <div class="item-text">51 Nguyen Cu Trinh Street, Nguyen Cu Trinh Ward, District
-                                            1, HCMC, Vietnam</div>
-                                    </div>
-                                </div>
-                                <div class="fxt-address-box">
-                                    <div class="item-icon">
-                                        <i class="flaticon-email"></i>
-                                    </div>
-                                    <div class="item-content">
-                                        <h3 class="item-title">Email</h3>
-                                        <div class="item-text">hello@izi.community</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            <!--/container-->
+          </header>
         </div>
-    </div>
+        <div id="ajax-content-wrap">
+          <div class="blurred-wrap">
+            <div class="container-wrap">
+              <div class="container main-content">
+                <div class="row">
+                  <div id="fws_62b32a06d542b" data-column-margin="default" data-midnight="dark" data-top-percent="5%"
+                    data-bottom-percent="5%"
+                    class="wpb_row vc_row-fluid vc_row top-level full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section "
+                    style="padding-top: calc(100vw * 0.05); padding-bottom: calc(100vw * 0.05); ">
+                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                      <div class="inner-wrap">
+                        <div class="row-bg using-bg-color" style="background-color: #ffcfcf; "></div>
+                      </div>
+                      <div class="row-bg-overlay"></div>
+                    </div>
+                    <div class="nectar-shape-divider-wrap " style=" height:900px;" data-front="" data-style="tilt_alt"
+                      data-position="bottom"><svg class="nectar-shape-divider" fill="#ffffff"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <polygon points="100 10 100 0 -4 10"></polygon>
+                      </svg></div>
+                    <div class="row_col_wrap_12 col span_12 dark left">
+                      <div
+                        class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default"
+                              data-border-radius="none" data-shadow="none" data-animation="fade-in">
+                              <div class="inner">
+                                <div class="hover-wrap" data-hover-animation="none">
+                                  <div class="hover-wrap-inner">
+                                    <img class="img-with-animation skip-lazy " data-delay="0" height="293" width="200"
+                                      data-animation="fade-in" src="./assets/img/banner.gif"
+                                      style="width: 300px; margin:auto;" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vc_col-sm-8 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                              <div class="wpb_wrapper">
+                                <h1 style="font-weight: 700!important; font-size: 80px;">
+                                  <div class="content__container">
+                                    <p class="content__container__text">
+                                      Nền tảng
+                                    </p>
+                                    <ul class="content__container__list">
+                                      <li class="content__container__list__item"><em class="border-text"> chơi</em></li>
+                                      <li class="content__container__list__item"><em class="border-text"> vui</em></li>
+                                      <li class="content__container__list__item"><em class="border-text"> giải trí</em>
+                                      </li>
+                                      <li class="content__container__list__item"><em class="border-text"> tương tác</em>
+                                      </li>
+                                    </ul>
+                                  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"
-        integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+                                  với kiến thức
+                                </h1>
+                                <div class="with-izi">
+                                  <span>
+                                    KIẾN THỨC GÌ?</h5>
+                                </div>
+                                <div class="tab">
+
+                                  <div class="tablinks" style="background-color: #fff4f4;">
+                                    <div class="tablink-container">
+                                      <div class="tablink-item top2">
+                                        <h5 style="font-weight:700!important;">Quản lý tài chính cá nhân</h5>
+                                      </div>
+                                      <div class="tablink-item text">
+                                        <ul>
+                                          <li>
+                                            <p>
+                                              Tăng thu nhập
+                                            </p>
+                                          </li>
+                                          <li>
+                                            <p>Chi tiêu tối ưu</p>
+                                          </li>
+                                          <li>
+                                            <p>Tiết kiệm & đầu tư hiệu quả</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tablinks" style="background-color: rgba(216, 237, 227, 0.25);">
+                                    <div class="tablink-container">
+                                      <div class="tablink-item top2">
+                                        <h5 style="font-weight:700!important;">Các xu hướng nghề nghiệp mới</h5>
+                                      </div>
+                                      <div class="tablink-item text">
+                                        <ul>
+                                          <li>
+                                            <p>Nhà sáng tạo nội dung</p>
+                                          </li>
+                                          <li>
+                                            <p>Chuyên gia khai vấn</p>
+                                          </li>
+                                          <li>
+                                            <p>Nhà thiết kế trải nghiệm</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="with-izi-result">
+                                  Từng nội dung gắn liền với những<br />
+                                  <p>công cụ tài chính</p> và <p>cơ hội nghề
+                                    nghiệp</p> thực tiễn
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fws_62b32a06d7002" data-column-margin="default" data-midnight="dark"
+                    class="wpb_row vc_row-fluid vc_row standard_section "
+                    style="padding-top: 0px; padding-bottom: 0px; ">
+                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                      <div class="inner-wrap">
+                        <div class="row-bg" style=""></div>
+                      </div>
+                      <div class="row-bg-overlay"></div>
+                    </div>
+                    <div class="row_col_wrap_12 col span_12 dark left">
+                      <div
+                        class="vc_col-sm-1/5 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vc_col-sm-1/5 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vc_col-sm-1/5 wpb_column column_container vc_column_container col centered-text no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                              data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                              data-animation="fade-in">
+                              <div class="inner">
+                                <div class="hover-wrap" data-hover-animation="none">
+                                  <div class="hover-wrap-inner">
+                                    <img class="img-with-animation skip-lazy " data-delay="0" height="37" width="34"
+                                      data-animation="fade-in" src="./wp-content/uploads/2020/07/dot-arrow.svg"
+                                      alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vc_col-sm-1/5 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vc_col-sm-1/5 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fws_62c74cb5e2840" data-midnight="dark" data-bg-mobile-hidden=""
+                    class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section   "
+                    style="padding: 6% 45px 0; margin-left: -45px; visibility: visible;">
+                    <div class="row-bg-wrap instance-5">
+                      <div class="inner-wrap">
+                        <div class="row-bg  using-bg-color  " style="background-color: #1c1c1c; " data-color_overlay=""
+                          data-color_overlay_2="" data-gradient_direction="" data-overlay_strength="0.3"
+                          data-enable_gradient="false"></div>
+                      </div>
+                    </div>
+                    <div class="col span_12 dark center">
+                      <div
+                        class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding instance-19"
+                        data-border-radius="none" data-shadow="none" data-border-animation=""
+                        data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                        data-border-color="" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="wpb_wrapper">
+                            <div class="divider-wrap">
+                              <div style="height: 25px;" class="divider"></div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element"
+                              style=" max-width: 800px; display: inline-block; margin-bottom: 64px;">
+                              <div class="wpb_wrapper">
+                                <h1 style="color: #fff; font-size: 64px;">Bạn sẽ gặp <span
+                                    style="background-image: linear-gradient(transparent, transparent 68%, #ff5050 68%, #ff5050);">chuyên
+                                    gia</span> nào trên iZi?
+                                </h1>
+                              </div>
+                            </div>
+                            <div id="fws_62c74cb5e2a83" data-midnight="" data-column-margin="default"
+                              data-bg-mobile-hidden=""
+                              class="wpb_row vc_row-fluid vc_row  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section    "
+                              style="padding-top: 0px; padding-bottom: 0px; ">
+                              <div class="row-bg-wrap">
+                                <div class="row-bg   " style=""></div>
+                              </div>
+                              <div class="col span_12  left">
+                                <div
+                                  class="vc_col-sm-4 wpb_column column_container vc_column_container col centered-text padding-2-percent instance-20"
+                                  data-shadow="none" data-border-radius="none" data-border-animation=""
+                                  data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                                  data-border-color="" data-bg-cover="" data-padding-pos="left-right"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="" data-delay="0">
+                                  <div class="vc_column-inner" style="justify-content: flex-start;">
+                                    <div class="wpb_wrapper">
+                                      <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                        data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                        data-animation="fade-in">
+                                        <div class="inner">
+                                          <div class="hover-wrap" data-hover-animation="none">
+                                            <div class="hover-wrap-inner">
+                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
+                                                height="200" width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
+                                                src="https://media-exp1.licdn.com/dms/image/C5603AQFFHB7d69LPdQ/profile-displayphoto-shrink_800_800/0/1649746593212?e=1662595200&v=beta&t=Z5mWPAKxaB2Eq3Ms_eehkp8_pRFVNA62gk42vdgvaWk"
+                                                alt="" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h3><span style="color: #fff;">Gerard Do</span></h3>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h5 style="font-weight: 400; letter-spacing: 0px; color: #909090;">
+                                            Chuyên gia Tài Chính<br />
+                                            Nhà đầu tư độc lập</h5>
+                                          <ul style=" margin: 16px auto 0 auto; text-align: left;">
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Hơn 300.000+ view bài viết @Spiderum</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Hơn 500.000+ view cho nội dung Tài Chính Cá Nhân trên kênh YouTube</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Quản lý Hệ sinh thái Khởi nghiệp @Trung tâm khởi nghiệp Quốc Gia
+                                              </p>
+                                            </li>
+
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="vc_col-sm-4 wpb_column column_container vc_column_container col centered-text padding-2-percent instance-21"
+                                  data-shadow="none" data-border-radius="none" data-border-animation=""
+                                  data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                                  data-border-color="" data-bg-cover="" data-padding-pos="left-right"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="" data-delay="0">
+                                  <div class="vc_column-inner" style="justify-content: flex-start;">
+                                    <div class="wpb_wrapper">
+                                      <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                        data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                        data-animation="fade-in">
+                                        <div class="inner">
+                                          <div class="hover-wrap" data-hover-animation="none">
+                                            <div class="hover-wrap-inner">
+                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
+                                                height="200" width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
+                                                data-animation="fade-in"
+                                                src="https://media-exp1.licdn.com/dms/image/C5603AQFWCUcavXyFXg/profile-displayphoto-shrink_800_800/0/1587713343310?e=1662595200&v=beta&t=ngQywgK8KcozvdwxiENf57qBrZ0pEh1wS_J-gB54mSM"
+                                                alt="" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h3><span style="color: #fff;">Dung Đặng</span></h3>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h5
+                                            style="font-family: 'DIN Pro'; font-weight: 400; letter-spacing: 0px; color: #909090;">
+                                            Chuyên gia Đào tạo Khai vấn<br />
+                                            Nhà sáng lập <span style="color: #eee!important;">@Vietnam Coaching
+                                              Hub</span></h5>
+
+
+                                          <ul style=" margin: 16px auto 0 auto; text-align: left;">
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Một trong những người tiên phong về Khai vấn tại Việt Nam</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Chứng nhận Chuyên gia Khai vấn quốc tế (ICF)</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>20 năm quản lý cấp cao và quản trị nguồn lực tại các Tập đoàn đa quốc
+                                                gia</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Thành viên sáng lập Hiệp hội Nhân sự HRA từ 2009</p>
+                                            </li>
+
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="divider-wrap">
+                                        <div style="height: 20px;" class="divider"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="vc_col-sm-4 wpb_column column_container vc_column_container col padding-2-percent instance-22"
+                                  data-shadow="none" data-border-radius="none" data-border-animation=""
+                                  data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                                  data-border-color="" data-bg-cover="" data-padding-pos="left-right"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="" data-delay="0">
+                                  <div class="vc_column-inner" style="justify-content: flex-start;">
+                                    <div class="wpb_wrapper">
+                                      <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                        data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                        data-animation="fade-in">
+                                        <div class="inner">
+                                          <div class="hover-wrap" data-hover-animation="none">
+                                            <div class="hover-wrap-inner">
+                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
+                                                height="200" width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;    border: 1px solid #eee;"
+                                                src="https://media-exp1.licdn.com/dms/image/C5603AQEsP88F7Q9uLA/profile-displayphoto-shrink_800_800/0/1628993719515?e=1662595200&v=beta&t=fqD6QUo3msT9KkkQXoz9tuAeXcj3WzYAuFHCN67TuQg"
+                                                alt="" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h3><span style="color: #fff;">Tuấn Mon</span></h3>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                          <h5 style="font-weight: 400; letter-spacing: 0px; color: #909090;">
+                                            Nhà sáng tạo nội dung<br /><span style="color: #eee!important;">@Blog “Many
+                                              One Percents”</span></h5>
+                                          <ul style="margin: 16px auto 0 auto; text-align: left;">
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Blogger về Hiệu suất & Công nghệ hàng đầu tại Việt Nam</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Trung bình >2,000 độc giả trung thành mỗi tuần</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Product Manager @ Holistics Data</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Growth Lead @ Unstatic</p>
+                                            </li>
+                                            <li style="color: #eee!important; font-size: 16px;">
+                                              <p>Tác giả @Vietcetera</p>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="divider-wrap">
+                                        <div style="height: 20px;" class="divider"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="divider-wrap">
+                              <div style="height: 25px;" class="divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div id="fws_62c7e773303f0" data-midnight="dark" data-bg-mobile-hidden=""
+                    class="wpb_row vc_row-fluid vc_row  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section   "
+                    style="padding-top: 50px; padding-bottom: 0px; ">
+
+                    <div class="row_col_wrap_12_inner col span_12 left">
+                      <div style="margin: 64px 0px;"
+                        class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column centered-text no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element "
+                              style=" max-width: 750px; display: inline-block;">
+                              <div class="wpb_wrapper">
+                                <h2 style="font-weight: 700 !important; text-align: center; font-size: 32px!important;">
+                                  ĐĂNG KÝ NGAY:<br />LÀM CHỦ TÀI CHÍNH CÁ NHÂN</h2>
+                                <p class="p1" style="text-align: center;">Qua 10 nội dung video tương tác trong format
+                                  tranh biện giữa 2 chuyên gia<br />
+                                  với nhiều <b><span style="font-family: 'Montserrat'">cơ hội và công cụ tài
+                                      chính</span></b> liên kết với từng nội dung:</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="fws_62b32a06dc50c" data-midnight="" data-column-margin="default"
+                      class="wpb_row vc_row-fluid vc_row inner_row standard_section   "
+                      style="padding-top: 0px; padding-bottom: 0px; ">
+                      <div class="row-bg-wrap">
+                        <div class="row-bg"></div>
+                      </div>
+                      <div class="row_col_wrap_12_inner col span_12  left">
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_1.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_1.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Giá trị Vật chất hay Giá trị Ý thức?                                  </p>
+                                  <p style="margin-bottom: -25px;">30 Phút hiểu về tài sản và thước đo giá trị của tài sản</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_2.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_2.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Ghi nợ (debit) hay Tín dụng (credit)?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về các sản phẩm tài chính và cách sử dụng tín dụng cho chi tiêu & đầu tư cá nhân </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_3.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_3.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tiền định danh (fiat) hay Tiền mã hoá (crypto)? </p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về sự ra đời và xu hướng phát triển của đồng tiền</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_4.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_4.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Làm thuê hay Làm chủ?</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về chi phí cơ hội giữa các lựa chọn nghề nghiệp</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_5.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_5.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Chi tiêu cho trải nghiệm hay Tiết kiệm cho an toàn?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về nguy và cơ của việc sử dụng tài chính </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_6.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_6.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Mua nhà hay Thuê nhà?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về những yếu tố ảnh hưởng đến quyết định chi tiêu</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_7.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_7.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Mua ô tô: Tài sản hay Tiêu sản?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về cách đánh giá và quyết định từng khoản đầu tư cá nhân</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_8.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_8.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tăng thu hay Giảm chi?</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về cách thức tối ưu hóa nguồn lực tài chính cá nhân</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="43" width="97" data-animation="fade-in"
+                                        src="./assets/img/arrow_9.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="98" width="63" data-animation="fade-in"
+                                        src="./assets/img/arrow_9.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Một rổ hay Nhiều rổ?</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về quản trị rủi ro trong đầu tư và xây dựng sự nghiệp</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="vc_column-inner">
+                            <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                              <div class="column-bg-overlay"></div>
+                            </div>
+                            <div class="wpb_wrapper">
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                        data-delay="0" height="42" style="height: 42px" data-animation="fade-in"
+                                        src="./assets/img/arrow_10.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
+                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
+                                data-animation="fade-in">
+                                <div class="inner">
+                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                    <div class="hover-wrap-inner">
+                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
+                                        data-delay="0" height="42" style="height: 42px" data-animation="fade-in"
+                                        src="./assets/img/arrow_10.svg" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;"> Lướt sóng hay Dài hạn?</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về các trường phái và triết lý đầu tư và tìm ra phương pháp phù hợp với mình</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="padding-bottom: 32px;margin-bottom: 32px;"
+                          class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                          data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                          data-animation="" data-delay="0">
+                          <div class="wpb_wrapper">
+                            <div class="nectar-next-section-wrap minimal-arrow" style="margin-top: 64px; display: flex; justify-content: center;"
+                              data-align="left" data-custom-color="true">
+                              <a href="#fws_62bccdc46c459" class="nectar-next-section skip-hash">
+                                <svg class="next-arrow" width="40px" height="68px" viewBox="0 0 40 50"
+                                  xml:space="preserve">
+                                  <path stroke="#605552" stroke-width="2" fill="none" d="M 20 0 L 20 51"></path>
+                                  <polyline stroke="#605552" stroke-width="2" fill="none" points="12, 44 20, 52 28, 44">
+                                  </polyline>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fws_62bccdc47c22c" data-column-margin="default" data-midnight="light"
+                    class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section mobile-hide"
+                    style="padding-top: 0px; padding-bottom: 0px; ">
+                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                      <div class="inner-wrap">
+                        <div class="row-bg using-bg-color" style="background-color: #262626; "></div>
+                      </div>
+                      <div class="row-bg-overlay"></div>
+                    </div>
+                    <div class="row_col_wrap_12 col span_12 light left">
+                      <div
+                        class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default"
+                              data-border-radius="none" data-shadow="none" data-animation="fade-in">
+                              <div class="inner">
+                                <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
+                                  <div class="hover-wrap-inner">
+                                    <img class="img-with-animation skip-lazy comp-plan animated-in" data-delay="0"
+                                      height="591" width="663" data-animation="fade-in"
+                                      src="wp-content/uploads/2020/04/comp-hero-05-05.svg" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="margin-top: 35px; margin-bottom: 35px; "
+                        class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                              <div class="wpb_wrapper">
+                                <p style="font-weight: 700!important; margin-bottom: -15px;">ĐĂNG KÝ TRƯỚC <span
+                                    style="color: #ff5050; font-family: 'Montserrat';font-size: 20px;">01/08/2022</span>
+                                  ĐỂ
+                                  TIẾT KIỆM 50% HỌC PHÍ: </p>
+
+                                <h2 style="display: flex; flex-wrap: wrap; font-size: 48px;">
+                                  <p style="text-decoration: line-through; margin-right: 4px;">4.000.000đ</p> →
+                                  2.000.000đ
+                                </h2>
+                              </div>
+                            </div>
+                            <script
+                              src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1604585329797"
+                              style=" max-width: 550px; display: inline-block;">
+                              <div class="wpb_wrapper">
+                                <p
+                                  style="margin-bottom: 0px!important; padding-bottom: 0!important; display: flex;align-items: center; color: white; font-family: 'Montserrat'!important; font-weight: bold !important;">
+                                  Quà tặng <lottie-player
+                                    src="https://assets5.lottiefiles.com/packages/lf20_wrbylkbm.json"
+                                    background="transparent" speed="1" style="width: 64px; height: 64px;" loop autoplay>
+                                  </lottie-player>
+                                </p>
+
+
+                                <p style="padding-bottom: 16px!important;font-size: 16px;">- 200.000đ cho người giới
+                                  thiệu thành công
+                                </p>
+                                <p style="padding-bottom: 0!important;font-size: 16px;">- Cẩm nang Tài chính cá nhân
+                                  được biên soạn bởi các chuyên gia Tài chính hàng đầu Việt
+                                  Nam, giúp bạn tự tin làm chủ tài chính của mình trong mọi tình huống.</p>
+                              </div>
+                            </div>
+                            <div class="nectar-cta  loaded" data-color="accent-color" data-using-bg="true"
+                              data-style="arrow-animation" data-display="block" data-alignment="left"
+                              data-text-color="custom" style="margin-top: 50px; margin-bottom: 20px; ">
+                              <h4 style="color: #ffffff;"><span class="link_wrap"
+                                  style="padding-top: 20px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px;"><a
+                                    class="link_text" href="../compensation-plan/index.html"><span class="text"
+                                      style="text-transform: uppercase;">Đăng ký ngay</span><svg class="next-arrow"
+                                      width="20px" height="25px" viewBox="0 0 50 80" xml:space="preserve">
+                                      <polyline stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round" points="0, 0 45, 40 0, 80"></polyline>
+                                    </svg> <span class="line" style="background-color: #ffffff;"></span> </a></span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fws_62b32a0703861" data-column-margin="default" data-midnight="dark" data-top-percent="0%"
+                    data-bottom-percent="0%" class="wpb_row vc_row-fluid vc_row full-width-section standard_section ">
+                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                      <div class="inner-wrap">
+                        <div class="row-bg using-bg-color" style="background-color: #ffffff; "></div>
+                      </div>
+                      <div class="row-bg-overlay"></div>
+                    </div>
+                    <div class="row_col_wrap_12 col span_12 dark left">
+                      <div
+                        class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                        data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                        data-animation="" data-delay="0">
+                        <div class="vc_column-inner">
+                          <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                            <div class="column-bg-overlay"></div>
+                          </div>
+                          <div class="wpb_wrapper">
+                            <div id="fws_62b32a0703f79" data-midnight="" data-column-margin="default"
+                              class="wpb_row vc_row-fluid vc_row inner_row standard_section  mobile-show "
+                              style="padding-top: 0px; padding-bottom: 0px; ">
+                              <div class="row-bg-wrap">
+                                <div class="row-bg"></div>
+                              </div>
+                              <div class="row_col_wrap_12_inner col span_12  left"></div>
+                            </div>
+                            <div id="fws_62b32a07041cd" data-midnight="" data-column-margin="default"
+                              class="wpb_row vc_row-fluid vc_row inner_row standard_section   "
+                              style="padding-top: 0px; padding-bottom: 0px; ">
+                              <div class="row-bg-wrap">
+                                <div class="row-bg"></div>
+                              </div>
+                              <div class="row_col_wrap_12_inner col span_12  left">
+                                <div
+                                  class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column centered-text no-extra-padding inherit_tablet inherit_phone "
+                                  data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="" data-delay="0">
+                                  <div class="vc_column-inner">
+                                    <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                                      <div class="column-bg-overlay"></div>
+                                    </div>
+                                    <div class="wpb_wrapper">
+                                      <div class="wpb_text_column wpb_content_element "
+                                        style=" max-width: 600px; display: inline-block;">
+                                        <div class="wpb_wrapper">
+                                          <!-- <h2 style="font-weight: 700 !important; text-align: center;">LIÊN HỆ</h2> -->
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div id="fws_62b32a07061e4" data-midnight="" data-column-margin="default"
+                              class="wpb_row vc_row-fluid vc_row inner_row  vc_row-o-content-middle standard_section   "
+                              style="margin: 0 auto; display: flex; justify-content: center;">
+                              <div class="row-bg-wrap">
+                                <div class="row-bg"></div>
+                              </div>
+                              <div class="row_col_wrap_6_inner col span_6 center">
+                                <form method="POST" id="submit-to-google-sheet-2">
+                                  <div class="row">
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-500">
+                                        <input type="text" class="form-control" placeholder="Họ và tên" name="name"
+                                          data-error="Name field is required" required="">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-500">
+                                        <input type="text" class="form-control" placeholder="Số điện thoại" name="phone"
+                                          data-error="Name field is required" required="">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-700">
+                                        <input type="email" class="form-control" placeholder="Thư điện tử" name="email"
+                                          data-error="Email field is required" required="">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-1100">
+                                        <textarea name="message" id="form-message" class="form-control textarea"
+                                          placeholder="Nội dung" cols="30" rows="4"
+                                          data-error="Message field is required" required=""></textarea>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-1300">
+                                        <button type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
+                                          <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner"
+                                            style="display: none;"></i>
+                                          GỬI</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-response" id="id-submit-google-form-message-2">
+                                    Thành công
+                                  </div>
+                                </form>
+
+                              </div>
+                            </div>
+                            <div id="fws_62bccdc4a57aa" data-column-margin="default" data-midnight="dark"
+                              class="wpb_row vc_row-fluid vc_row full-width-section standard_section "
+                              style="padding-top: 100px; padding-bottom: 100px; ">
+                              <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                                <div class="inner-wrap">
+                                  <div class="row-bg using-bg-color" style="background-color: #ffffff; "></div>
+                                </div>
+                                <div class="row-bg-overlay"></div>
+                              </div>
+                              <div class="row_col_wrap_12 col span_12 dark left">
+                                <div
+                                  class="vc_col-sm-12 wpb_column column_container vc_column_container col has-animation no-extra-padding inherit_tablet inherit_phone  triggered-animation animated-in"
+                                  data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="fade-in-from-bottom" data-delay="200"
+                                  style="opacity: 1; transform: none;">
+                                  <div class="vc_column-inner">
+                                    <div class="column-bg-overlay-wrap" data-bg-animation="none">
+                                      <div class="column-bg-overlay"></div>
+                                    </div>
+                                    <div class="wpb_wrapper">
+                                      <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                          <h2>CÂU HỎI THƯỜNG GẶP.</h2>
+                                        </div>
+                                      </div>
+                                      <div class="toggles " data-style="minimal">
+                                        <div class="toggle default" data-inner-wrap="true">
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>iZi là gì?</a>
+                                          </h3>
+                                          <div>
+                                            <div class="inner-toggle-wrap">
+                                              <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                  <p>iZi là nền tảng giải trí với kiến thức được thành lập
+                                                    từ tháng 02/2021. Chúng tôi muốn tạo ra một “ngôi trường mở
+                                                    bằng công nghệ” - nơi bất kì ai đều có thể chia sẻ và đón
+                                                    nhận tri thức một cách đầy vui vẻ và tự do.</h4>
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="toggle default" data-inner-wrap="true">
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Tôi có thể học trên iZi như thế
+                                              nào?</a></h3>
+                                          <div>
+                                            <div class="inner-toggle-wrap">
+                                              <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                  <p>Bạn có thể xem các video là các đoạn đối thoại và tranh luận giữa
+                                                    hai chuyên gia kéo dài 30-90 phút. Xen kẽ giữa các đoạn gây cấn là
+                                                    những câu hỏi để bạn có thể tương tác và xem bạn bè và cộng đồng
+                                                    cùng trả lời thế nào. Bạn có thể đặt câu hỏi cho chuyên gia và click
+                                                    chọn những cơ hội được các chuyên gia chia sẻ trong video.
+                                                    <br />Ngoài ra, bạn có thể thoải mái lướt xem các đoạn video tranh
+                                                    luận ngắn khác.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="toggle default" data-inner-wrap="true">
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Các chuyên gia trên iZi là những
+                                              ai?</a></h3>
+                                          <div>
+                                            <div class="inner-toggle-wrap">
+                                              <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                  <p>Họ là những người thông minh, duyên dáng, nhiều kiến thức và kinh
+                                                    nghiệm trong lĩnh vực Tài Chính cá nhân và Các xu hướng nghề nghiệp
+                                                    mới: Chuyên gia tài chính, Nhà sáng lập, Doanh nhân, Nhà đầu tư.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="toggle default" data-inner-wrap="true">
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Tôi đăng ký và thanh toán như
+                                              thế nào?</a></h3>
+                                          <div>
+                                            <div class="inner-toggle-wrap">
+                                              <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                  <p>Tải và sử dụng ứng dụng iZi hoàn toàn miễn phí từ ngày
+                                                    8/8/2022 trên Google Play. Để đăng ký tham khóa học Làm chủ
+                                                    Tài chính Cá nhân trên ứng dụng, vui lòng thanh toán theo 01
+                                                    trong 02 cách sau:</p>
+                                                  <div>
+                                                    <h5
+                                                      style="font-size: 16px; margin-top: -5px; color: #ff5050; font-weight: bold; letter-spacing: -0.5px; text-align: left;">
+                                                      Chuyển khoản</h5>
+                                                    <ul>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Ngân hàng: Techcombank - Ngân hàng TMCP Kỹ thương Việt Nam
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Chi nhánh: Pasteur
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Đơn vị thụ hưởng: CÔNG TY TRÁCH NHIỆM HỮU HẠN IZI
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Số tài khoản: 19036717968013
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Nội dung chuyển khoản: [Họ và tên]-[SĐT đăng ký]-TCCN
+                                                        </p>
+                                                      </li>
+                                                    </ul>
+                                                    <h5
+                                                      style="font-size: 16px; margin-top: 32px; color: #ff5050; font-weight: bold; letter-spacing: -0.5px; text-align: left;">
+                                                      MoMo</h5>
+                                                    <ul>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Số điện thoại: 0913228397
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Người nhận: NGUYEN DUC HIEU
+                                                        </p>
+                                                      </li>
+                                                      <li>
+                                                        <p
+                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                          Nội dung chuyển: [Họ và tên]-[SĐT đăng ký]-TCCN
+                                                        </p>
+                                                      </li>
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="fws_62c74c64c1caf" data-midnight="light" data-bg-mobile-hidden=""
+                              class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section    first-section loaded"
+                              style="padding: 64px 57.5px; margin-left: -57.5px; visibility: visible; ">
+                              <div class="row-bg-wrap instance-0">
+                                <div class="inner-wrap">
+                                  <div class="row-bg  using-bg-color  " style="background-color: #ffcfcf; "
+                                    data-color_overlay="" data-color_overlay_2="" data-gradient_direction=""
+                                    data-overlay_strength="0.3" data-enable_gradient="false"></div>
+                                </div>
+                              </div>
+                              <div class="col span_12 light left">
+                                <div
+                                  class="vc_col-sm-6 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col padding-2-percent instance-0"
+                                  data-border-radius="none" data-shadow="none" data-border-animation=""
+                                  data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                                  data-border-color="" data-bg-cover="" data-padding-pos="left-right"
+                                  data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
+                                  data-hover-bg-opacity="1" data-animation="" data-delay="0" style="width: 100%;">
+                                  <div class="vc_column-inner" style="width: 100%;padding-right: 0px;">
+                                    <div class="wpb_wrapper" style="width: 100%;">
+                                      <div class="wpb_raw_code wpb_raw_js">
+                                        <div class="wpb_wrapper">
+                                          <script type="text/javascript">const second = 1000,
+                                              minute = second * 60,
+                                              hour = minute * 60,
+                                              day = hour * 24;
+
+                                            let countDown = new Date('2022-08-08 00:00:00').getTime(),
+                                              x = setInterval(function () {
+
+                                                let now = new Date().getTime(),
+                                                  distance = countDown - now;
+
+                                                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                                                  document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                                                  document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                                                  document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+                                                //do something later when date is reached
+                                                //if (distance < 0) {
+                                                //  clearInterval(x);
+                                                //  'CHALLENGES EXPIRED;
+                                                //}
+
+                                              }, second)</script>
+                                        </div>
+                                      </div>
+                                      <div class="wpb_text_column wpb_content_element  vc_custom_1618426625826"
+                                        style=" display: flex; width: 100%;">
+                                        <div class="wpb_wrapper" style="flex: 1; width: 100%;">
+
+                                          <h1 style="color: #cc0000; text-align: left; line-height: 48px;">iZi</h1>
+                                          <p
+                                            style="color: #070707; max-width: 450px; font-size: 25px; line-height: 32px; text-align: left; padding-top: 15px;">
+                                            Nền tảng giải trí với kiến thức đầu tiên tại Việt Nam.</p>
+                                          <p
+                                            style="font-size: 18px; color: #070707; text-align: left; margin-bottom: -15px;">
+                                            Ngày ra mắt 08-08-2022
+                                          </p>
+                                          <div class="cd-container"
+                                            style="display: flex; width: 100%; flex: 1;align-items: center;">
+                                            <ul style="flex: 1;">
+                                              <li><span id="days">30</span></li>
+                                              <li><span id="hours">0</span></li>
+                                              <li><span id="minutes">0</span></li>
+                                              <li><span id="seconds">0</span></li>
+                                            </ul>
+                                            <div>
+                                              <ul style="display: flex;">
+                                                <li class="fxt-facebook">
+                                                  <a href="#" title="Appstore">
+                                                    <img style="height: 60px;" src="./assets/img/appstore.svg"
+                                                      alt="" /></a>
+                                                </li>
+                                                <li class="fxt-twitter" style="margin-left: 16px;">
+                                                  <a href="#" title="Google play">
+                                                    <img style="height: 60px;" src="./assets/img/google_play.svg"
+                                                      alt="Google" />
+                                                  </a>
+                                                </li>
+
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="vc_col-sm-6 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col centered-text no-extra-padding instance-1"
+                                  data-border-radius="none" data-shadow="none" data-border-animation=""
+                                  data-border-animation-delay="" data-border-width="none" data-border-style="solid"
+                                  data-border-color="" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
+                                  data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
+                                  data-animation="" data-delay="0">
+                                  <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="vc_col-sm-12 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col">
+                                  <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                      <div class="footer">
+                                        <div class="fxt-socials">
+                                          <ul>
+                                            <li class="fxt-facebook">
+                                              <div class="translate-zoomout-10 transition-100 transition-delay-3600">
+                                                <a href="https://www.facebook.com/izi.community" title="Facebook"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                              </div>
+                                            </li>
+                                            <li class="fxt-twitter">
+                                              <div class="translate-zoomout-10 transition-100 transition-delay-3800">
+                                                <a href="https://www.instagram.com/izi.community/" title="instagram"><i
+                                                    class="fab fa-instagram"></i></a>
+                                              </div>
+                                            </li>
+                                            <li class="fxt-google">
+                                              <div class="translate-zoomout-10 transition-100 transition-delay-4000">
+                                                <a href="https://www.youtube.com/channel/UCT3gRdZXIRmHoIXFHYdrP5Q"
+                                                  title="youtube"><i class="fab fa-youtube"></i></a>
+                                              </div>
+                                            </li>
+                                            <li class="fxt-linkedin">
+                                              <div class="translate-zoomout-10 transition-100 transition-delay-4200">
+                                                <a href="https://www.linkedin.com/company/izi-our-mind/"
+                                                  title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="col span_3">
+                                          <p style="text-align:right; color: #222;font-weight: 700!important;">© iZi Co.
+                                            Ltd | 2022.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ocm-effect-wrap-->
+  <style type="text/css">
+    .searchwp-live-search-results {
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      height: 0;
+      overflow: hidden;
+      z-index: 9999995;
+      /* Exceed SearchWP Modal Search Form overlay. */
+      position: absolute;
+      display: none;
+    }
+
+    .searchwp-live-search-results-showing {
+      display: block;
+      opacity: 1;
+      height: auto;
+      overflow: auto;
+    }
+
+    .searchwp-live-search-no-results {
+      padding: 3em 2em 0;
+      text-align: center;
+    }
+
+    .searchwp-live-search-no-min-chars:after {
+      content: "Continue typing";
+      display: block;
+      text-align: center;
+      padding: 2em 2em 0;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/kc4oetkk/dfpn7.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <script type='text/javascript'
+    src='./wp-content/plugins/contact-form-7/includes/js/scriptsbdeb.js?ver=5.1.3'></script>
+
+  <script type='text/javascript'
+    src='./wp-content/plugins/copy-the-code/assets/js/copy-the-codeb34d.js?ver=1.7.4'></script>
+  <script type='text/javascript' src='./wp-content/plugins/salient-social/js/salient-social4963.js?ver=1.1'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
+
+  <script type='text/javascript'
+    src='./wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.minae82.js?ver=4.2.0'></script>
+  <script type='text/javascript' src='./wp-includes/js/underscore.min4511.js?ver=1.8.3'></script>
+  <script type='text/javascript'
+    src='./wp-content/plugins/wordpress-popup/assets/js/front.minae82.js?ver=4.2.0'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/jquery.easing4e44.js?ver=1.3'></script>
+  <script type='text/javascript'
+    src='./wp-content/themes/salient/js/third-party/jquery.mousewheela9d5.js?ver=3.1.13'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/priority0a8a.js?ver=13.0.6'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/transite2dc.js?ver=0.9.9'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/waypoints05da.js?ver=4.0.2'></script>
+  <script type='text/javascript'
+    src='./wp-content/plugins/salient-portfolio/js/third-party/imagesLoaded.mineda1.js?ver=4.1.4'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/hoverintent3aa8.js?ver=1.9'></script>
+  <script type='text/javascript'
+    src='./wp-content/themes/salient/js/third-party/jquery.fancybox.minb186.js?ver=3.3.8'></script>
+  <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/superfish0322.js?ver=1.5.8'></script>
+
+  <script type='text/javascript' src='./wp-content/themes/salient/js/init0a8a.js?ver=13.0.6'></script>
+  <!-- <script type='text/javascript'
+    src='./wp-content/plugins/salient-core/js/third-party/touchswipe.min5152.js?ver=1.0'></script> -->
+  <!-- <script type='text/javascript' src='./wp-content/themes/salient/js/third-party/select2.min49eb.js?ver=3.5.2'></script>
+  <script type='text/javascript'
+    src='./wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/bundle.min5f04.js?ver=1.4.6'></script>
+  <script type='text/javascript' src='./wp-includes/js/wp-embed.min923e.js?ver=5.4.10'></script> -->
+  <script type='text/javascript'
+    src='./wp-content/plugins/js_composer_salient/assets/js/dist/js_composer_front.min10df.js?ver=6.2.0'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/ui/accordion.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='./wp-includes/js/jquery/ui/effect.mine899.js?ver=1.11.4'></script>
+
 </body>
 
 </html>
