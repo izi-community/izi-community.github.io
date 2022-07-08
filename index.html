@@ -374,6 +374,15 @@
       .svg-number-cont {
         display: block !important;
       }
+
+      .mobile-menu {
+        display: flex!important;
+        align-items: center;
+      }
+
+      .mobile-menu a {
+        font-weight: 600;
+      }
     }
 
     @media only screen and (max-width: 600px) {
@@ -1654,14 +1663,9 @@
                       src="./assets/img/logo.png" /> </a>
                 </div>
                 <!--/span_3-->
-                <div class="col span_9 col_last">
-                  <div class="slide-out-widget-area-toggle mobile-icon fullscreen" data-custom-color="false"
-                    data-icon-animation="simple-transform">
-                    <div> <a href="#sidewidgetarea" aria-label="Navigation Menu" aria-expanded="false"
-                        class="closed using-label">
-                        <i class="label">Menu</i><span aria-hidden="true"> <i class="lines-button x2"> <i
-                              class="lines"></i> </i> </span>
-                      </a></div>
+                <div class="col span_9 col_last mobile-menu">
+                  <div class="mobile-show">
+                    <a href="/about.html"><span class="menu-title-text">Về iZi</span></a>
                   </div>
                   <nav>
                     <ul class="sf-menu">
@@ -2544,9 +2548,9 @@
                     </div>
                   </div>
                   <div id="fws_62bccdc47c22c" data-column-margin="default" data-midnight="light"
-                    class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section mobile-hide"
+                    class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section"
                     style="padding-top: 0px; padding-bottom: 0px; ">
-                    <div class="row-bg-wrap vc_hidden-sm vc_hidden-xs" data-bg-animation="none" data-bg-overlay="false">
+                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
                       <div class="inner-wrap">
                         <div class="row-bg using-bg-color" style="background-color: #262626; "></div>
                       </div>
@@ -2579,7 +2583,7 @@
                         </div>
                       </div>
                       <div style="margin-top: 35px; margin-bottom: 35px; "
-                        class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone "
+                        class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding "
                         data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
                         data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
                         data-animation="" data-delay="0">
@@ -2661,7 +2665,7 @@
                           </div>
                           <div class="wpb_wrapper">
                             <div id="fws_62b32a0703f79" data-midnight="" data-column-margin="default"
-                              class="wpb_row vc_hidden-sm vc_hidden-xs vc_row-fluid vc_row inner_row standard_section"
+                              class="wpb_row  vc_row-fluid vc_row inner_row standard_section"
                               style="padding-top: 0px; padding-bottom: 0px; ">
                               <div class="row-bg-wrap">
                                 <div class="row-bg"></div>
