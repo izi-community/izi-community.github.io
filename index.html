@@ -36,6 +36,7 @@
     .content__container {
       overflow: hidden;
       height: 91px;
+      font-size: 80px;
     }
 
     .content__container__text {
@@ -43,6 +44,7 @@
       float: left;
       margin: 0;
       font-weight: 700 !important;
+      font-size: 80px;
     }
 
     .content__container__list {
@@ -64,6 +66,97 @@
       list-style: none;
       font-weight: 700 !important;
     }
+
+
+    @media only screen and (max-width:1440px) {
+      .content__container {
+        height: 80px;
+        font-size: 60px;
+      }
+
+      .content__container__text {
+        font-size: 60px;
+      }
+    }
+
+    @media only screen and (max-width:1123px) {
+      .content__container {
+        height: 70px;
+        font-size: 54px;
+      }
+
+      .content__container__text {
+        font-size: 54px;
+      }
+    }
+
+    @media only screen and (max-width:1024px) {
+      .fun-platform {
+        margin-top: 32px !important;
+      }
+
+      .content__container {
+        height: 55px;
+        font-size: 50px;
+      }
+
+      .border-text {
+        line-height: 50px !important;
+        -webkit-text-stroke: 0.035em transparent !important;
+        font-size: 50px !important;
+      }
+
+
+      .content__container__text {
+        font-size: 50px;
+      }
+
+      .home-banner {
+        width: 36% !important;
+      }
+    }
+
+    .pros .img-with-animation {
+      width: 200px !important;
+      height: 200px !important;
+    }
+
+    @media only screen and (max-width:767px) {
+      .fun-platform {
+        margin-top: 32px !important;
+      }
+
+      .content__container {
+        height: 40px !important;
+        font-size: 32px !important;
+        -webkit-text-stroke: 0.035em transparent !important;
+      }
+
+      .border-text {
+        line-height: 36px !important;
+        -webkit-text-stroke: 0.035em transparent !important;
+        font-size: 31px !important;
+      }
+
+      .content__container__text {
+        font-size: 32px !important;
+        -webkit-text-stroke: none !important;
+      }
+
+      .home-banner {
+        width: 50% !important;
+      }
+
+      .pros .img-with-animation {
+        width: 100px !important;
+        height: 100px !important;
+      }
+
+      #fws_62bccdc4a57aa {
+        padding-top: 64px !important;
+      }
+    }
+
 
     @-webkit-keyframes opacity {
 
@@ -257,6 +350,36 @@
 
     .tab {
       display: flex;
+    }
+
+    @media only screen and (max-width:767px) {
+      .tab {
+        flex-direction: column;
+      }
+
+      .tablink-item.top2 h5 {
+        font-size: 20px !important;
+        line-height: 22px;
+      }
+
+      .wpb_wrapper h1 {
+        line-height: normal;
+        font-size: 32px !important;
+      }
+
+      .with-izi-result {
+        font-size: 16px;
+      }
+
+      .svg-number-cont {
+        display: block !important;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .svg-number-cont {
+        display: block !important;
+      }
     }
 
     .tablinks {
@@ -569,6 +692,49 @@
       color: white;
 
     }
+
+    @media only screen and (max-width:1024px) {
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+      }
+
+      .footer .span_3 p {
+        text-align: left !important;
+        margin-top: 16px !important;
+      }
+
+      .fxt-socials {
+        padding: 0;
+      }
+
+      .fxt-socials ul li {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+      }
+
+      .fxt-socials ul li i {
+        font-size: 16px;
+      }
+      .cd-container {
+        flex-direction: column;
+        align-items: flex-start!important;
+      }
+      .cd-container>div:last-child {
+        margin-top: 32px;
+      }
+      .cd-container li span {
+        font-size: 32px;
+      }
+
+      .wpb_wrapper h2 {
+        font-size: 24px!important;
+      }
+    }
+
 
     #submit-to-google-sheet-2 input,
     #submit-to-google-sheet-2 textarea {
@@ -1311,10 +1477,6 @@
       max-width: 85px !important;
     }
 
-    .svg-number-cont-mobile {
-      display: none !important;
-    }
-
     .svg-label-cont {
       width: 125px !important;
       max-width: 125px !important;
@@ -1478,36 +1640,13 @@
           data-remove-fixed="1" data-header-resize="0" data-cart="false" data-transparency-option="0"
           data-box-shadow="none" data-shrink-num="6" data-using-secondary="0" data-using-logo="1" data-logo-height="40"
           data-m-logo-height="32" data-padding="16" data-full-width="false" data-condense="false">
-          <div id="search-outer" class="nectar">
-            <div id="search">
-              <div class="container">
-                <div id="search-box">
-                  <div class="inner-wrap">
-                    <div class="col span_12">
-                      <form role="search" action="https://iZi.app/leaders/" method="GET">
-                        <input type="text" name="s" id="s" value="" aria-label="Search" placeholder="Search" />
-                        <span>Hit enter to search or ESC to close</span>
-                      </form>
-                    </div>
-                    <!--/span_12-->
-                  </div>
-                  <!--/inner-wrap-->
-                </div>
-                <!--/search-box-->
-                <div id="close"><a href="#"><span class="screen-reader-text">Close Search</span>
-                    <span class="close-wrap"> <span class="close-line close-line1"></span> <span
-                        class="close-line close-line2"></span> </span> </a></div>
-              </div>
-              <!--/container-->
-            </div>
-            <!--/search-->
-          </div>
+          
           <!--/search-outer-->
           <header id="top">
             <div class="container">
               <div class="row">
                 <div class="col span_3">
-                  <a id="logo" href="./index.html" data-supplied-ml-starting-dark="true"
+                  <a id="logo" href="/" data-supplied-ml-starting-dark="true"
                     data-supplied-ml-starting="true" data-supplied-ml="true">
                     <img class="stnd skip-lazy default-logo" width="642.12" height="208.82" alt="iZi"
                       src="./assets/img/logo.png">
@@ -1528,11 +1667,11 @@
                     <ul class="sf-menu">
                       <li id="menu-item-3080"
                         class="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-3080">
-                        <a href="././purpose/index.html"><span class="menu-title-text">Về iZi</span></a>
+                        <a href="/about.html"><span class="menu-title-text">Về iZi</span></a>
                       </li>
                       <li id="menu-item-3086"
                         class="get-started menu-item menu-item-type-custom menu-item-object-custom button_solid_color menu-item-3086">
-                        <a href="https://joiniZi.app.link/xWHqZEXTGZ"><span class="menu-title-text">Liên hệ</span></a>
+                        <a href="#submit-to-google-sheet-2"><span class="menu-title-text">Liên hệ</span></a>
                       </li>
                     </ul>
                     <ul class="buttons sf-menu" data-user-set-ocm="off">
@@ -1582,8 +1721,8 @@
                               <div class="inner">
                                 <div class="hover-wrap" data-hover-animation="none">
                                   <div class="hover-wrap-inner">
-                                    <img class="img-with-animation skip-lazy " data-delay="0" height="293" width="200"
-                                      data-animation="fade-in" src="./assets/img/banner.gif"
+                                    <img class="img-with-animation skip-lazy home-banner" data-delay="0" height="293"
+                                      width="200" data-animation="fade-in" src="./assets/img/banner.gif"
                                       style="width: 300px; margin:auto;" alt="" />
                                   </div>
                                 </div>
@@ -1597,14 +1736,14 @@
                         data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
                         data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
                         data-animation="" data-delay="0">
-                        <div class="vc_column-inner">
+                        <div class="vc_column-inner fun-platform">
                           <div class="column-bg-overlay-wrap" data-bg-animation="none">
                             <div class="column-bg-overlay"></div>
                           </div>
                           <div class="wpb_wrapper">
                             <div class="wpb_text_column wpb_content_element ">
                               <div class="wpb_wrapper">
-                                <h1 style="font-weight: 700!important; font-size: 80px;">
+                                <h1 style="font-weight: 700!important;display: inline-block;">
                                   <div class="content__container">
                                     <p class="content__container__text">
                                       Nền tảng
@@ -1618,8 +1757,7 @@
                                       </li>
                                     </ul>
                                   </div>
-
-                                  với kiến thức
+                                  <p class="content__container__text">với kiến thức</p>
                                 </h1>
                                 <div class="with-izi">
                                   <span>
@@ -1784,7 +1922,7 @@
                           data-enable_gradient="false"></div>
                       </div>
                     </div>
-                    <div class="col span_12 dark center">
+                    <div class="col span_12 dark center pros">
                       <div
                         class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding instance-19"
                         data-border-radius="none" data-shadow="none" data-border-animation=""
@@ -1829,9 +1967,9 @@
                                         <div class="inner">
                                           <div class="hover-wrap" data-hover-animation="none">
                                             <div class="hover-wrap-inner">
-                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
-                                                height="200" width="200" data-animation="fade-in"
-                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
+                                              <img class="img-with-animation skip-lazy" data-delay="0" height="200"
+                                                width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
                                                 src="https://media-exp1.licdn.com/dms/image/C5603AQFFHB7d69LPdQ/profile-displayphoto-shrink_800_800/0/1649746593212?e=1662595200&v=beta&t=Z5mWPAKxaB2Eq3Ms_eehkp8_pRFVNA62gk42vdgvaWk"
                                                 alt="" />
                                             </div>
@@ -1882,9 +2020,9 @@
                                         <div class="inner">
                                           <div class="hover-wrap" data-hover-animation="none">
                                             <div class="hover-wrap-inner">
-                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
-                                                height="200" width="200" data-animation="fade-in"
-                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
+                                              <img class="img-with-animation skip-lazy" data-delay="0" height="200"
+                                                width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;box-shadow: 0 10px 50px rgb(0 0 0 / 1%), 0 13px 45px rgb(0 0 0 / 1%);"
                                                 data-animation="fade-in"
                                                 src="https://media-exp1.licdn.com/dms/image/C5603AQFWCUcavXyFXg/profile-displayphoto-shrink_800_800/0/1587713343310?e=1662595200&v=beta&t=ngQywgK8KcozvdwxiENf57qBrZ0pEh1wS_J-gB54mSM"
                                                 alt="" />
@@ -1945,9 +2083,9 @@
                                         <div class="inner">
                                           <div class="hover-wrap" data-hover-animation="none">
                                             <div class="hover-wrap-inner">
-                                              <img class="img-with-animation skip-lazy svg-number-cont" data-delay="0"
-                                                height="200" width="200" data-animation="fade-in"
-                                                style="border-radius: 200px;max-width: 200px!important;width: 200px!important;    border: 1px solid #eee;"
+                                              <img class="img-with-animation skip-lazy" data-delay="0" height="200"
+                                                width="200" data-animation="fade-in"
+                                                style="border-radius: 200px;    border: 1px solid #eee;"
                                                 src="https://media-exp1.licdn.com/dms/image/C5603AQEsP88F7Q9uLA/profile-displayphoto-shrink_800_800/0/1628993719515?e=1662595200&v=beta&t=fqD6QUo3msT9KkkQXoz9tuAeXcj3WzYAuFHCN67TuQg"
                                                 alt="" />
                                             </div>
@@ -2055,30 +2193,20 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
                                         src="./assets/img/arrow_1.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
-                                        src="./assets/img/arrow_1.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+  
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Giá trị Vật chất hay Giá trị Ý thức?                                  </p>
-                                  <p style="margin-bottom: -25px;">30 Phút hiểu về tài sản và thước đo giá trị của tài sản</p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Giá trị Vật chất hay Giá
+                                    trị Ý thức? </p>
+                                  <p style="margin-bottom: -25px;">30 Phút hiểu về tài sản và thước đo giá trị của tài
+                                    sản</p>
                                 </div>
                               </div>
                             </div>
@@ -2100,21 +2228,8 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_2.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
                                         src="./assets/img/arrow_2.svg" alt="">
                                     </div>
                                   </div>
@@ -2122,8 +2237,10 @@
                               </div>
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Ghi nợ (debit) hay Tín dụng (credit)?</p>
-                                  <p style="margin-bottom: -25px;">60 Phút hiểu về các sản phẩm tài chính và cách sử dụng tín dụng cho chi tiêu & đầu tư cá nhân </p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Ghi nợ (debit) hay Tín
+                                    dụng (credit)?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về các sản phẩm tài chính và cách sử
+                                    dụng tín dụng cho chi tiêu & đầu tư cá nhân </p>
                                 </div>
                               </div>
                             </div>
@@ -2145,21 +2262,8 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy  animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_3.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
                                         src="./assets/img/arrow_3.svg" alt="">
                                     </div>
                                   </div>
@@ -2167,8 +2271,10 @@
                               </div>
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tiền định danh (fiat) hay Tiền mã hoá (crypto)? </p>
-                                  <p style="margin-bottom: -25px;">60 Phút hiểu về sự ra đời và xu hướng phát triển của đồng tiền</p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tiền định danh (fiat) hay
+                                    Tiền mã hoá (crypto)? </p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về sự ra đời và xu hướng phát triển của
+                                    đồng tiền</p>
                                 </div>
                               </div>
                             </div>
@@ -2190,21 +2296,8 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy  animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_4.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
                                         src="./assets/img/arrow_4.svg" alt="">
                                     </div>
                                   </div>
@@ -2213,7 +2306,8 @@
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Làm thuê hay Làm chủ?</p>
-                                  <p style="margin-bottom: -25px;">90 Phút hiểu về chi phí cơ hội giữa các lựa chọn nghề nghiệp</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về chi phí cơ hội giữa các lựa chọn nghề
+                                    nghiệp</p>
                                 </div>
                               </div>
                             </div>
@@ -2235,21 +2329,8 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_5.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
                                         src="./assets/img/arrow_5.svg" alt="">
                                     </div>
                                   </div>
@@ -2257,8 +2338,10 @@
                               </div>
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Chi tiêu cho trải nghiệm hay Tiết kiệm cho an toàn?</p>
-                                  <p style="margin-bottom: -25px;">60 Phút hiểu về nguy và cơ của việc sử dụng tài chính </p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Chi tiêu cho trải nghiệm
+                                    hay Tiết kiệm cho an toàn?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về nguy và cơ của việc sử dụng tài chính
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -2280,21 +2363,8 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_6.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
                                         src="./assets/img/arrow_6.svg" alt="">
                                     </div>
                                   </div>
@@ -2303,7 +2373,8 @@
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Mua nhà hay Thuê nhà?</p>
-                                  <p style="margin-bottom: -25px;">60 Phút hiểu về những yếu tố ảnh hưởng đến quyết định chi tiêu</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về những yếu tố ảnh hưởng đến quyết định
+                                    chi tiêu</p>
                                 </div>
                               </div>
                             </div>
@@ -2325,30 +2396,20 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy  animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
                                         src="./assets/img/arrow_7.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
-                                        src="./assets/img/arrow_7.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Mua ô tô: Tài sản hay Tiêu sản?</p>
-                                  <p style="margin-bottom: -25px;">60 Phút hiểu về cách đánh giá và quyết định từng khoản đầu tư cá nhân</p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Mua ô tô: Tài sản hay
+                                    Tiêu sản?</p>
+                                  <p style="margin-bottom: -25px;">60 Phút hiểu về cách đánh giá và quyết định từng
+                                    khoản đầu tư cá nhân</p>
                                 </div>
                               </div>
                             </div>
@@ -2370,30 +2431,20 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
                                         src="./assets/img/arrow_8.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
-                                        src="./assets/img/arrow_8.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tăng thu hay Giảm chi?</p>
-                                  <p style="margin-bottom: -25px;">90 Phút hiểu về cách thức tối ưu hóa nguồn lực tài chính cá nhân</p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;">Tăng thu hay Giảm chi?
+                                  </p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về cách thức tối ưu hóa nguồn lực tài
+                                    chính cá nhân</p>
                                 </div>
                               </div>
                             </div>
@@ -2415,30 +2466,19 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="43" width="97" data-animation="fade-in"
                                         src="./assets/img/arrow_9.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="98" width="63" data-animation="fade-in"
-                                        src="./assets/img/arrow_9.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Một rổ hay Nhiều rổ?</p>
-                                  <p style="margin-bottom: -25px;">90 Phút hiểu về quản trị rủi ro trong đầu tư và xây dựng sự nghiệp</p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về quản trị rủi ro trong đầu tư và
+                                    xây dựng sự nghiệp</p>
                                 </div>
                               </div>
                             </div>
@@ -2461,43 +2501,34 @@
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont animated-in"
+                                      <img class="img-with-animation skip-lazy animated-in"
                                         data-delay="0" height="42" style="height: 42px" data-animation="fade-in"
                                         src="./assets/img/arrow_10.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="img-with-aniamtion-wrap center" data-max-width="100%"
-                                data-max-width-mobile="default" data-border-radius="none" data-shadow="none"
-                                data-animation="fade-in">
-                                <div class="inner">
-                                  <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
-                                    <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy svg-number-cont-mobile animated-in"
-                                        data-delay="0" height="42" style="height: 42px" data-animation="fade-in"
-                                        src="./assets/img/arrow_10.svg" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <p style="font-weight: 700!important; margin-bottom: -15px;"> Lướt sóng hay Dài hạn?</p>
-                                  <p style="margin-bottom: -25px;">90 Phút hiểu về các trường phái và triết lý đầu tư và tìm ra phương pháp phù hợp với mình</p>
+                                  <p style="font-weight: 700!important; margin-bottom: -15px;"> Lướt sóng hay Dài hạn?
+                                  </p>
+                                  <p style="margin-bottom: -25px;">90 Phút hiểu về các trường phái và triết lý
+                                    đầu tư và tìm ra phương pháp phù hợp với mình</p>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div style="padding-bottom: 32px;margin-bottom: 32px;"
-                          class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
+                          class="vc_hidden-sm vc_hidden-xs vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone "
                           data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false"
                           data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
                           data-animation="" data-delay="0">
                           <div class="wpb_wrapper">
-                            <div class="nectar-next-section-wrap minimal-arrow" style="margin-top: 64px; display: flex; justify-content: center;"
-                              data-align="left" data-custom-color="true">
+                            <div class="nectar-next-section-wrap minimal-arrow"
+                              style="margin-top: 64px; display: flex; justify-content: center;" data-align="left"
+                              data-custom-color="true">
                               <a href="#fws_62bccdc46c459" class="nectar-next-section skip-hash">
                                 <svg class="next-arrow" width="40px" height="68px" viewBox="0 0 40 50"
                                   xml:space="preserve">
@@ -2515,7 +2546,7 @@
                   <div id="fws_62bccdc47c22c" data-column-margin="default" data-midnight="light"
                     class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex  vc_row-o-content-middle standard_section mobile-hide"
                     style="padding-top: 0px; padding-bottom: 0px; ">
-                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
+                    <div class="row-bg-wrap vc_hidden-sm vc_hidden-xs" data-bg-animation="none" data-bg-overlay="false">
                       <div class="inner-wrap">
                         <div class="row-bg using-bg-color" style="background-color: #262626; "></div>
                       </div>
@@ -2597,7 +2628,7 @@
                               data-text-color="custom" style="margin-top: 50px; margin-bottom: 20px; ">
                               <h4 style="color: #ffffff;"><span class="link_wrap"
                                   style="padding-top: 20px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px;"><a
-                                    class="link_text" href="../compensation-plan/index.html"><span class="text"
+                                    class="link_text" href="#submit-to-google-sheet-2"><span class="text"
                                       style="text-transform: uppercase;">Đăng ký ngay</span><svg class="next-arrow"
                                       width="20px" height="25px" viewBox="0 0 50 80" xml:space="preserve">
                                       <polyline stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round"
@@ -2630,7 +2661,7 @@
                           </div>
                           <div class="wpb_wrapper">
                             <div id="fws_62b32a0703f79" data-midnight="" data-column-margin="default"
-                              class="wpb_row vc_row-fluid vc_row inner_row standard_section  mobile-show "
+                              class="wpb_row vc_hidden-sm vc_hidden-xs vc_row-fluid vc_row inner_row standard_section"
                               style="padding-top: 0px; padding-bottom: 0px; ">
                               <div class="row-bg-wrap">
                                 <div class="row-bg"></div>
@@ -2638,7 +2669,7 @@
                               <div class="row_col_wrap_12_inner col span_12  left"></div>
                             </div>
                             <div id="fws_62b32a07041cd" data-midnight="" data-column-margin="default"
-                              class="wpb_row vc_row-fluid vc_row inner_row standard_section   "
+                              class="wpb_row vc_hidden-sm vc_hidden-xs vc_row-fluid vc_row inner_row standard_section   "
                               style="padding-top: 0px; padding-bottom: 0px; ">
                               <div class="row-bg-wrap">
                                 <div class="row-bg"></div>
@@ -2692,7 +2723,7 @@
                                     </div>
                                     <div class="col-lg-12 form-group">
                                       <div class="translate-bottom delay-700">
-                                        <input type="email" class="form-control" placeholder="Thư điện tử" name="email"
+                                        <input type="email" class="form-control" placeholder="Email" name="email"
                                           data-error="Email field is required" required="">
                                         <div class="help-block with-errors"></div>
                                       </div>
@@ -2896,7 +2927,7 @@
                               </div>
                               <div class="col span_12 light left">
                                 <div
-                                  class="vc_col-sm-6 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col padding-2-percent instance-0"
+                                  class="vc_col-sm-6  wpb_column column_container vc_column_container col padding-2-percent instance-0"
                                   data-border-radius="none" data-shadow="none" data-border-animation=""
                                   data-border-animation-delay="" data-border-width="none" data-border-style="solid"
                                   data-border-color="" data-bg-cover="" data-padding-pos="left-right"
@@ -2987,8 +3018,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div
-                                  class="vc_col-sm-12 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col">
+                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col">
                                   <div class="vc_column-inner">
                                     <div class="wpb_wrapper">
                                       <div class="footer">
