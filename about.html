@@ -78147,16 +78147,18 @@
     #submit-to-google-sheet-2 .form-group>div {
       width: 100%;
     }
+
     #submit-to-google-sheet-2 input {
 
       padding-left: 8px !important;
       padding-right: 8px !important;
     }
 
-    #submit-to-google-sheet-2 textarea{
-      padding-left: 8px!important;
-    width: calc(100% - 8px);
+    #submit-to-google-sheet-2 textarea {
+      padding-left: 8px !important;
+      width: calc(100% - 8px);
     }
+
     #submit-to-google-sheet-2 input:focus,
     #submit-to-google-sheet-2 textarea:focus {
       border-color: #fff;
@@ -78782,14 +78784,14 @@
                                   tự do mà bất kì ai đều có thể chia sẻ và đón nhận tri thức - với:</p>
                                 <ul>
                                   <li>
-                                    <p style="font-size: 14px;">Bộ công cụ giúp dễ dàng truyền tải và lưu trữ tri thức</p>
+                                    <p>Bộ công cụ giúp dễ dàng truyền tải và lưu trữ tri thức</p>
                                   </li>
                                   <li>
-                                    <p style="font-size: 14px;">Thiết kế trò chơi và trí tuệ nhân tạo giúp tri thức trở nên thú vị và cá nhân
+                                    <p>Thiết kế trò chơi và trí tuệ nhân tạo giúp tri thức trở nên thú vị và cá nhân
                                       hóa</p>
                                   </li>
                                   <li>
-                                    <p style="font-size: 14px;">Cơ chế tăng thu nhập và xây dựng cộng đồng cho từng nội dung & nhà sáng tạo
+                                    <p>Cơ chế tăng thu nhập và xây dựng cộng đồng cho từng nội dung & nhà sáng tạo
                                     </p>
                                   </li>
                                 </ul>
@@ -78873,14 +78875,14 @@
                                   tự do mà bất kì ai đều có thể chia sẻ và đón nhận tri thức - với:</p>
                                 <ul>
                                   <li>
-                                    <p style="font-size: 14px;">Bộ công cụ giúp dễ dàng truyền tải và lưu trữ tri thức</p>
+                                    <p>Bộ công cụ giúp dễ dàng truyền tải và lưu trữ tri thức</p>
                                   </li>
                                   <li>
-                                    <p style="font-size: 14px;">Thiết kế trò chơi và trí tuệ nhân tạo giúp tri thức trở nên thú vị và cá nhân
+                                    <p>Thiết kế trò chơi và trí tuệ nhân tạo giúp tri thức trở nên thú vị và cá nhân
                                       hóa</p>
                                   </li>
                                   <li>
-                                    <p style="font-size: 14px;">Cơ chế tăng thu nhập và xây dựng cộng đồng cho từng nội dung & nhà sáng tạo
+                                    <p>Cơ chế tăng thu nhập và xây dựng cộng đồng cho từng nội dung & nhà sáng tạo
                                     </p>
                                   </li>
                                 </ul>
@@ -79319,7 +79321,7 @@
                               style="color: #fff; font-size: 3em; letter-spacing: -2px !important; font-weight: 800!important; text-align: center;">
                               LIÊN HỆ
                             </h1>
-                            <form method="POST" id="submit-to-google-sheet-2">
+                            <form id="submit-to-google-sheet-2">
                               <div class="row">
                                 <div class="col-lg-12 form-group">
                                   <div class="translate-bottom delay-500">
@@ -79351,16 +79353,19 @@
                                     <div class="help-block with-errors"></div>
                                   </div>
                                 </div>
-                                <div class="col-lg-12 form-group">
-                                  <div class="translate-bottom delay-1300">
+                                <div class="col-lg-12">
+                                  <div class="translate-bottom delay-1300" style="margin: 0 auto; text-align: center;">
                                     <button type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
-                                      <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner"
-                                        style="display: none;"></i>
+                                      <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner" style="display: none;    width: 24px;
+                                        height: 24px;
+                                        align-items: center;
+                                        justify-content: center;"></i>
                                       GỬI</button>
                                   </div>
                                 </div>
                               </div>
-                              <div class="form-response" id="id-submit-google-form-message-2">
+                              <div class="form-response" id="id-submit-google-form-message-2"
+                                style="margin-bottom: 32px; text-align: center;color: #00d084;">
                                 Thành công
                               </div>
                             </form>
@@ -81421,7 +81426,70 @@
 
   <script type='text/javascript'
     src='./wp-content/uploads/cache/fvm/1655314816/out/footer-6212c5d683adc8ff1da1622f6b9658253e87af36.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+  <script>
+    jQuery(document).ready(() => init());
 
+    const init = () => {
+      // initContactForm({
+      //   formName: "submit-to-google-sheet",
+      //   submitButton: "#id-submit-google-form",
+      //   message: "#id-submit-google-form-message",
+      //   loadingId: "#id-fa-spin"
+      // });
+
+      initContactForm({
+        formName: "submit-to-google-sheet-2",
+        submitButton: "#id-submit-google-form-2",
+        message: "#id-submit-google-form-message-2",
+        loadingId: "#id-fa-spin-2"
+      });
+
+      jQuery("#id-fa-spin").hide();
+      jQuery("#id-fa-spin-2").hide();
+    };
+
+    const initContactForm = ({
+      formName = "submit-to-google-sheet",
+      submitButton = "#id-submit-google-form",
+      message = "#id-submit-google-form-message",
+      loadingId = "#id-fa-spin"
+    }) => {
+      const formElement = document.forms[`${formName}`];
+      console.log(jQuery(`${submitButton}`))
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx1QksuAIPxfojJNKqK6_pMoybAFZmy8JkmtgPTtM9Id548G0tdub9Oe5TKVyYzbHE/exec";
+      formElement.addEventListener("submit", (e) => {
+        jQuery(`${submitButton}`).prop("disabled", true);
+        jQuery(`${loadingId}`).css({
+          display: 'inline-flex',
+
+        });
+        e.preventDefault();
+        const formData = new FormData(formElement);
+        formData.append("date", moment().format("DD-MM-YYYY HH:mm"));
+        fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((a) => {
+            jQuery(`${submitButton}`).prop("disabled", false);
+            formElement.reset();
+            jQuery(`${loadingId}`).hide();
+            jQuery(`${message}`).show();
+            setTimeout(() => {
+              jQuery(`${message}`).hide();
+            }, 4000);
+          })
+          .catch((error) => {
+            jQuery(`${submitButton}`).prop("disabled", false);
+            jQuery(`${loadingId}`).hide();
+            console.error("Error!", error.message);
+          });
+      });
+    };  
+  </script>
 </body>
 
 

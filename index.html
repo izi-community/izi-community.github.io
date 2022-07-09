@@ -26,8 +26,9 @@
     rel="stylesheet">
   <style type="text/css">
     body {
-      font-family: 'Montserrat', sans-serif!important;
+      font-family: 'Montserrat', sans-serif !important;
     }
+
     img.wp-smiley,
     img.emoji {
       display: inline !important;
@@ -131,7 +132,7 @@
 
     @media only screen and (max-width:767px) {
       .fun-platform {
-        margin-top: 32px !important;
+        margin-top: 28px !important;
       }
 
       .content__container {
@@ -152,7 +153,9 @@
       }
 
       .home-banner {
-        width: 90% !important;
+        width: auto !important;
+        height: 57vh !important;
+        object-fit: contain;
       }
 
       .pros .img-with-animation {
@@ -162,6 +165,20 @@
 
       #fws_62bccdc4a57aa {
         padding-top: 64px !important;
+      }
+    }
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+      .home-banner {
+        width: auto !important;
+        height: 55vh !important;
+        object-fit: contain;
+      }
+      .fun-platform {
+        margin-top: 16px !important;
       }
     }
 
@@ -384,7 +401,7 @@
       }
 
       .mobile-menu {
-        display: flex!important;
+        display: flex !important;
         align-items: center;
       }
 
@@ -736,19 +753,22 @@
       .fxt-socials ul li i {
         font-size: 16px;
       }
+
       .cd-container {
         flex-direction: column;
-        align-items: flex-start!important;
+        align-items: flex-start !important;
       }
+
       .cd-container>div:last-child {
         margin-top: 32px;
       }
+
       .cd-container li span {
         font-size: 32px;
       }
 
       .wpb_wrapper h2 {
-        font-size: 24px!important;
+        font-size: 24px !important;
       }
     }
 
@@ -1552,7 +1572,7 @@
 </head>
 
 <body
-class="page-template-default page page-id-12409 theme-salient woocommerce-no-js original wpb-js-composer js-comp-ver-5.4.7 vc_responsive"
+  class="page-template-default page page-id-12409 theme-salient woocommerce-no-js original wpb-js-composer js-comp-ver-5.4.7 vc_responsive"
   data-footer-reveal="false" data-header-format="centered-menu" data-boxed-style="1" data-header-breakpoint="1000"
   data-footer-reveal-shadow="none" data-dropdown-style="minimal" data-cae="easeOutCubic" data-megamenu-width="contained"
   data-cad="750" data-aie="slide-down" data-ls="fancybox" data-apte="standard" data-hhun="1" data-fancy-form-rcs="1"
@@ -1572,14 +1592,14 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
           data-remove-fixed="1" data-header-resize="0" data-cart="false" data-transparency-option="0"
           data-box-shadow="none" data-shrink-num="6" data-using-secondary="0" data-using-logo="1" data-logo-height="40"
           data-m-logo-height="32" data-padding="16" data-full-width="false" data-condense="false">
-          
+
           <!--/search-outer-->
           <header id="top">
             <div class="container">
               <div class="row">
                 <div class="col span_3">
-                  <a id="logo" href="/" data-supplied-ml-starting-dark="true"
-                    data-supplied-ml-starting="true" data-supplied-ml="true">
+                  <a id="logo" href="/" data-supplied-ml-starting-dark="true" data-supplied-ml-starting="true"
+                    data-supplied-ml="true">
                     <img class="stnd skip-lazy default-logo" width="642.12" height="208.82" alt="iZi"
                       src="./assets/img/logo.png">
                     <img class="mobile-only-logo skip-lazy" alt="iZi" width="642.12" height="208.82"
@@ -2031,19 +2051,13 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                               One Percents”</span></h5>
                                           <ul style="margin: 16px auto 0 auto; text-align: left;">
                                             <li style="color: #eee!important; font-size: 16px;">
-                                              <p>Blogger về Hiệu suất & Công nghệ hàng đầu tại Việt Nam</p>
+                                              <p>Quản lý sản phẩm tại công ty dữ liệu Holistics</p>
                                             </li>
                                             <li style="color: #eee!important; font-size: 16px;">
-                                              <p>Trung bình >2,000 độc giả trung thành mỗi tuần</p>
+                                              <p>Blogger về hiệu suất và công nghệ đầu tiên của Việt Nam</p>
                                             </li>
                                             <li style="color: #eee!important; font-size: 16px;">
-                                              <p>Product Manager @ Holistics Data</p>
-                                            </li>
-                                            <li style="color: #eee!important; font-size: 16px;">
-                                              <p>Growth Lead @ Unstatic</p>
-                                            </li>
-                                            <li style="color: #eee!important; font-size: 16px;">
-                                              <p>Tác giả @Vietcetera</p>
+                                              <p>Đối tác với Vietcetera, Unilever và nhiều brand khác</p>
                                             </li>
                                           </ul>
                                         </div>
@@ -2120,14 +2134,13 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_1.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_1.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-  
+
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Giá trị Vật chất hay Giá
@@ -2155,9 +2168,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_2.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_2.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2189,9 +2201,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy  animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_3.svg" alt="">
+                                      <img class="img-with-animation skip-lazy  animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_3.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2223,9 +2234,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy  animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_4.svg" alt="">
+                                      <img class="img-with-animation skip-lazy  animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_4.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2256,9 +2266,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_5.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_5.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2290,9 +2299,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_6.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_6.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2323,9 +2331,8 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy  animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_7.svg" alt="">
+                                      <img class="img-with-animation skip-lazy  animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_7.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
@@ -2358,14 +2365,13 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_8.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_8.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              
+
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Tăng thu hay Giảm chi?
@@ -2393,14 +2399,13 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="43" width="97" data-animation="fade-in"
-                                        src="./assets/img/arrow_9.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="43"
+                                        width="97" data-animation="fade-in" src="./assets/img/arrow_9.svg" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              
+
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;">Một rổ hay Nhiều rổ?</p>
@@ -2428,14 +2433,14 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="inner">
                                   <div class="hover-wrap" data-hover-animation="none" style="opacity: 1;">
                                     <div class="hover-wrap-inner">
-                                      <img class="img-with-animation skip-lazy animated-in"
-                                        data-delay="0" height="42" style="height: 42px" data-animation="fade-in"
-                                        src="./assets/img/arrow_10.svg" alt="">
+                                      <img class="img-with-animation skip-lazy animated-in" data-delay="0" height="42"
+                                        style="height: 42px" data-animation="fade-in" src="./assets/img/arrow_10.svg"
+                                        alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              
+
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <p style="font-weight: 700!important; margin-bottom: -15px;"> Lướt sóng hay Dài hạn?
@@ -2632,7 +2637,7 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                 <div class="row-bg"></div>
                               </div>
                               <div class="row_col_wrap_6_inner col span_6 center">
-                                <form method="POST" id="submit-to-google-sheet-2">
+                                <form id="submit-to-google-sheet-2">
                                   <div class="row">
                                     <div class="col-lg-12 form-group">
                                       <div class="translate-bottom delay-500">
@@ -2666,14 +2671,15 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                     </div>
                                     <div class="col-lg-12 form-group">
                                       <div class="translate-bottom delay-1300">
-                                        <button style="font-family: 'Montserrat'; font-size: 20px; font-weight: bold;" type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
+                                        <button style="font-family: 'Montserrat'; font-size: 20px; font-weight: bold;"
+                                          type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
                                           <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner"
                                             style="display: none;"></i>
                                           GỬI</button>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="form-response" id="id-submit-google-form-message-2">
+                                  <div class="form-response" id="id-submit-google-form-message-2" style="color: #32ea73;">
                                     Thành công
                                   </div>
                                 </form>
@@ -2864,29 +2870,7 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
                                     <div class="wpb_wrapper" style="width: 100%;">
                                       <div class="wpb_raw_code wpb_raw_js">
                                         <div class="wpb_wrapper">
-                                          <script type="text/javascript">const second = 1000,
-                                              minute = second * 60,
-                                              hour = minute * 60,
-                                              day = hour * 24;
 
-                                            let countDown = new Date('2022-08-08 00:00:00').getTime(),
-                                              x = setInterval(function () {
-
-                                                let now = new Date().getTime(),
-                                                  distance = countDown - now;
-
-                                                document.getElementById('days').innerText = Math.floor(distance / (day)),
-                                                  document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                                                  document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                                                  document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-                                                //do something later when date is reached
-                                                //if (distance < 0) {
-                                                //  clearInterval(x);
-                                                //  'CHALLENGES EXPIRED;
-                                                //}
-
-                                              }, second)</script>
                                         </div>
                                       </div>
                                       <div class="wpb_text_column wpb_content_element  vc_custom_1618426625826"
@@ -3037,7 +3021,7 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
     }
   </style>
 
-  
+
   <script type='text/javascript'
     src='./wp-content/plugins/contact-form-7/includes/js/scriptsbdeb.js?ver=5.1.3'></script>
 
@@ -3077,7 +3061,89 @@ class="page-template-default page page-id-12409 theme-salient woocommerce-no-js 
   <script type='text/javascript' src='./wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
   <script type='text/javascript' src='./wp-includes/js/jquery/ui/accordion.mine899.js?ver=1.11.4'></script>
   <script type='text/javascript' src='./wp-includes/js/jquery/ui/effect.mine899.js?ver=1.11.4'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+  <script type="text/javascript">
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
+    let countDown = new Date('8/8/2022, 00:00:00 AM').getTime(),
+      x = setInterval(function () {
+
+        let now = new Date().getTime(),
+          distance = countDown - now;
+
+          console.log(countDown)
+
+        document.getElementById('days').innerText = Math.floor(distance / (day)),
+          document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      }, second)
+
+
+
+      jQuery(document).ready(() => init());
+
+const init = () => {
+  // initContactForm({
+  //   formName: "submit-to-google-sheet",
+  //   submitButton: "#id-submit-google-form",
+  //   message: "#id-submit-google-form-message",
+  //   loadingId: "#id-fa-spin"
+  // });
+
+  initContactForm({
+    formName: "submit-to-google-sheet-2",
+    submitButton: "#id-submit-google-form-2",
+    message: "#id-submit-google-form-message-2",
+    loadingId: "#id-fa-spin-2"
+  });
+
+  jQuery("#id-fa-spin").hide();
+  jQuery("#id-fa-spin-2").hide();
+};
+
+const initContactForm = ({
+  formName = "submit-to-google-sheet",
+  submitButton = "#id-submit-google-form",
+  message = "#id-submit-google-form-message",
+  loadingId = "#id-fa-spin"
+}) => {
+  const formElement = document.forms[`${formName}`];
+  console.log(jQuery(`${submitButton}`))
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbx1QksuAIPxfojJNKqK6_pMoybAFZmy8JkmtgPTtM9Id548G0tdub9Oe5TKVyYzbHE/exec";
+  formElement.addEventListener("submit", (e) => {
+    jQuery(`${submitButton}`).prop("disabled", true);
+    jQuery(`${loadingId}`).show();
+    e.preventDefault();
+    const formData = new FormData(formElement);
+    formData.append("date", moment().format("DD-MM-YYYY HH:mm"));
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((a) => {
+        jQuery(`${submitButton}`).prop("disabled", false);
+        formElement.reset();
+        jQuery(`${loadingId}`).hide();
+        jQuery(`${message}`).show();
+        setTimeout(() => {
+          jQuery(`${message}`).hide();
+        }, 4000);
+      })
+      .catch((error) => {
+        jQuery(`${submitButton}`).prop("disabled", false);
+        jQuery(`${loadingId}`).hide();
+        console.error("Error!", error.message);
+      });
+  });
+};
+  </script>
+  
 </body>
 
 </html>
