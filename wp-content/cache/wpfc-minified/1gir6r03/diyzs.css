@@ -567,7 +567,7 @@ body .nectar-fancy-box .link-text{
 font-size:12px;
 }
 .nectar-fancy-box .link-text{
-font-family:'Open Sans';
+font-family:'Chakra Petch';
 line-height:14px;
 font-weight:700;
 letter-spacing:2px;
@@ -9726,7 +9726,7 @@ background-color: transparent!important;
 #slide-out-widget-area[class*="slide-out-from-right"] .off-canvas-menu-container li a {
 font-size: 22px;
 line-height: 28px;
-font-family: 'Open Sans';
+font-family: 'Chakra Petch';
 font-weight: 400;
 }
 #slide-out-widget-area-bg.slide-out-from-right {
