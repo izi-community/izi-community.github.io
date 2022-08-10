@@ -140,8 +140,9 @@
 
     @media only screen and (max-width:767px) {
       #logo {
-        width: 30%!important;
+        width: 30% !important;
       }
+
       .fun-platform {
         margin-top: 28px !important;
       }
@@ -2049,22 +2050,21 @@
 
     .hiw-scroll ul div.flag {
       border: unset;
-      padding-bottom: 150px;
       list-style-type: none;
       position: relative;
       white-space: nowrap;
       width: 6px;
       margin: 0 auto;
-      margin-top: -25px;
-      background: #fe5454;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul div.flag:last-of-type {
       padding-bottom: 50px;
+      margin-top: 32px;
     }
 
     .hiw-scroll ul div.flag:not(:first-of-type) {
-      background: #34b57b;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul li {
@@ -2073,11 +2073,11 @@
       width: 6px;
       margin: 0 auto;
       padding-top: 50px;
-      background: #34b57b;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul li:nth-child(-n + 4) {
-      background: #fe5454;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul li:last-child {
@@ -2138,7 +2138,7 @@
     }
 
     comp>section>ul>li>div {
-      max-width: 300px;
+      max-width: 330px;
     }
 
     /* EFFECTS–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2148,11 +2148,11 @@
     }
 
     .hiw-scroll ul li.in-view::after {
-      background: #34b57b;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul li.in-view:nth-child(-n + 4):after {
-      background: #fe5454;
+      background: #1d1d1d;
     }
 
     .hiw-scroll ul li div {
@@ -2175,8 +2175,9 @@
       opacity: 1;
     }
 
+    .hiw-scroll ul li.last div,
     .hiw-scroll ul li:last-of-type div {
-      transform: translateY(100px);
+      transform: translateY(100px) !important;
     }
 
     /* MEDIA QUERIES–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2264,21 +2265,22 @@
         padding-bottom: 150px;
       }
 
+      /* 
       .fixing-green {
         background: linear-gradient(to bottom, #34b57b 91%, transparent 90%) !important;
       }
 
       .fixing-red {
         background: linear-gradient(to bottom, #fe5454 91%, transparent 90%) !important;
-      }
+      } */
 
-      #friend-purchase.fixing-green {
+      /* #friend-purchase.fixing-green {
         background: linear-gradient(to bottom, #34b57b 90%, transparent 90%) !important;
       }
 
       #last-fixing-green {
         background: linear-gradient(to bottom, #34b57b 88%, transparent 88%) !important;
-      }
+      } */
 
       .hiw-scroll ul li:nth-of-type(odd) div {
         left: 75px;
@@ -2293,6 +2295,7 @@
         background: unset !important;
       }
 
+      .hiw-scroll ul li.last,
       comp>section>ul>li:nth-of-type(1),
       comp>section>ul>li:last-of-type {
         width: auto;
@@ -2319,20 +2322,37 @@
         top: 110px;
       }
 
+
       comp>section>ul>li:nth-of-type(4),
       comp>section>ul>li:nth-of-type(6) {
         height: 125px;
       }
+
+      comp>section>ul>li.last {
+        height: fit-content !important;
+        padding-top: 100px;
+      }
+
+      .hiw-scroll ul li.last {
+        background: transparent;
+      }
+
+      .hiw-scroll ul li.last div {
+        left: 0 !important;
+        right: 0;
+        margin: auto;
+        text-align: center;
+      }
     }
 
     @media screen and (min-width: 1000px) {
-      .fixing-green {
+      /* .fixing-green {
         background: linear-gradient(to bottom, #34b57b 90%, transparent 90%) !important;
       }
 
       .fixing-red {
         background: linear-gradient(to bottom, #fe5454 89%, transparent 89%) !important;
-      }
+      } */
 
       .hiw-scroll ul li:nth-of-type(odd)>div {
         left: 150px;
@@ -2386,7 +2406,7 @@
       background: #1d1d1d !important;
     }
 
-    #friend-purchase.fixing-green {
+    /* #friend-purchase.fixing-green {
       background: linear-gradient(to bottom, #141414 90%, transparent 90%) !important;
     }
 
@@ -2396,7 +2416,7 @@
 
     #last-fixing-green {
       background: linear-gradient(to bottom, #141414 90%, transparent 90%) !important;
-    }
+    } */
 
     comp>section>ul>li:nth-of-type(2) {
       background: #1d1d1d !important;
@@ -2483,7 +2503,8 @@
       color: #fff;
       background: #ff5050 !important;
       font-size: 15px !important;
-      letter-spacing: 1px !important padding-top:13px;
+      letter-spacing: 1px !important;
+      padding-top: 13px;
       border-radius: 50px !important;
       box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15) !important;
       border: none !important;
@@ -2850,31 +2871,34 @@
 
     @media only screen and (max-width:768px) {
       #fws_62c74c66a72c9 img {
-        height: 300px!important;
-        width: auto!important;
+        height: 300px !important;
+        width: auto !important;
       }
+
       #fws_62c74c66a72c9 .owl-carousel {
         padding-top: 64px;
       }
 
       #fws_62f32fd339492.vc_row.standard_section {
-        padding-bottom: 0px!important;
+        padding-bottom: 0px !important;
       }
 
       #swipe-card.mobile {
         display: none;
       }
+
       #swipe-card.none {
         display: none;
       }
     }
 
     @media screen and (max-width: 690px) {
-      .hiw-scroll ul li, .hiw-scroll ul div.flag {
+
+      .hiw-scroll ul li,
+      .hiw-scroll ul div.flag {
         margin-left: 0;
       }
     }
-
   </style>
 </head>
 
@@ -3057,7 +3081,8 @@
                                           </wrap> <time>Tham gia giải quest tại link được chia sẻ
                                             tại
                                           </time>
-                                          <a href="#" style="word-wrap: break-word;">izi.community/tenquestduocchiase.</a>
+                                          <a href="#"
+                                            style="word-wrap: break-word;">izi.community/tenquestduocchiase.</a>
                                         </div>
                                       </li>
                                       <li id="swipe-card" class="mobile">
@@ -3077,7 +3102,7 @@
                                                 class=" lazyloaded"
                                                 src="https://fluz.app/wp-content/uploads/2020/09/4.svg"
                                                 data-src="https://fluz.app/wp-content/uploads/2020/09/4.svg"></span>
-                                          </wrap> <time>Nhập vai và bắt đầu giải quest</time> bằng cách trả lời các câu
+                                          </wrap> <time>Nhập vai và bắt đầu giải quest.</time> bằng cách trả lời các câu
                                           đố, câu hỏi kiến thức vui và hữu ích.
                                         </div>
                                       </li>
@@ -3091,21 +3116,39 @@
                                                 class=" lazyloaded"
                                                 src="https://fluz.app/wp-content/uploads/2020/09/8.svg"
                                                 data-src="https://fluz.app/wp-content/uploads/2020/09/8.svg"></span>
-                                          </wrap> <time>Giành điểm cao</time> Tiêu chí xếp hạng do người tạo quest đề ra
-                                          theo yêu cầu số lượng câu trả lời đúng và nhanh nhất.
+                                          </wrap> <time>Giành điểm cao.</time> Tiêu chí xếp hạng do người tạo quest đề
+                                          ra theo yêu cầu số lượng và tốc độ trả lời đúng.
                                         </div>
                                       </li>
 
                                       <li id="more-purchases" style="display: none;">
 
                                       </li>
-                                      <div class="flag in-view" id="last-fixing-green" style="display: none;">
+                                      <div class="in-view" id="last-fixing-green" style="display: none;">
 
                                       </div>
-                                      <div class="flag in-view" style="display: none;">
+                                      <div class="in-view" style="display: none;">
 
+                                      </div>
+
+                                      <li class="last in-view">
+                                        <div>
+                                          <wrap class="first-icon-text scroll-time-icon-wrap"><span
+                                              class="scroll-time-icon"><noscript><img
+                                                  src="https://fluz.app/wp-content/uploads/2020/09/8.svg"></noscript><img
+                                                class=" lazyloaded"
+                                                src="https://fluz.app/wp-content/uploads/2020/09/8.svg"
+                                                data-src="https://fluz.app/wp-content/uploads/2020/09/8.svg"></span>
+                                          </wrap> <time>Nhận thưởng.</time> Do người tạo quest treo giải, có thể là tiền
+                                          mặt, phiếu mua hàng điện tử hoặc giấy chứng nhận hoàn thành.
+                                        </div>
+                                      </li>
+
+                                      <div class="flag in-view">
+                                        <div></div>
                                       </div>
                                       <li class="in-view">
+
                                         <div>
                                           <wrap class="first-icon-text scroll-time-icon-wrap"><span
                                               class="scroll-time-icon"><noscript><img
@@ -3114,10 +3157,11 @@
                                                 src="https://fluz.app/wp-content/uploads/2020/09/8.svg"
                                                 data-src="https://fluz.app/wp-content/uploads/2020/09/8.svg"></span>
                                           </wrap>
-                                          <time>Nhận thưởng</time> Phần thưởng được người tạo quest treo giải, có thể là
-                                          tiền mặt, phiếu mua hàng điện tử hoặc giấy chứng nhận hoàn thành.
+                                          <time>Khám phá tiếp...</time> Đi dạo vòng quanh bản đồ để giải tiếp các Quest
+                                          và săn kho báu khác.
                                         </div>
                                       </li>
+
                                     </ul>
                                   </section>
                                   <div id="hiw-last-scroll"></div>
@@ -3131,7 +3175,7 @@
                   </div>
                   <div id="fws_62c74c66a72c9" data-midnight="light" data-bg-mobile-hidden=""
                     class="wpb_row vc_row-fluid vc_row full-width-section standard_section"
-                    style="padding-top: 3%; padding-bottom: 0px; ">
+                    style="padding-top: 20%; padding-bottom: 0px; ">
                     <div class="row-bg-wrap">
                       <div class="inner-wrap">
                         <div class="row-bg  using-bg-color  " style="background-color: #2b2b2b; " data-color_overlay=""
@@ -3153,11 +3197,22 @@
                         data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1"
                         data-animation="" data-delay="0">
                         <div class="vc_column-inner">
+
                           <div class="wpb_wrapper">
+                            <div class="wpb_wrapper">
+                              
+                              <h2 class="amp"
+                                style="line-height: 40px; text-transform: inherit; text-align: center;">
+                                30’ tạo quest với <span style="color: #ff5050;">iZi</span></h2>
+                              <p class="amp"
+                                style="padding-top: 15px; line-height: 1.75em;text-align: center;">
+                                Dành cho tổ chức, công ty, cá nhân cho hoạt động thương hiệu, giáo dục và đào tạo</p>
+                            </div>
                             <div class="owl-carousel" data-enable-animation="" data-loop="true" data-animation-delay="0"
                               data-autorotate="true" data-autorotation-speed="5000" data-column-padding="0"
                               data-desktop-cols="1" data-desktop-small-cols="1" data-tablet-cols="1"
                               data-mobile-cols="1">
+
                               <div class="carousel-item">
                                 <div id="fws_62c74c66a75cd" data-midnight="" data-column-margin="default"
                                   data-bg-mobile-hidden=""
@@ -3167,27 +3222,7 @@
                                     <div class="row-bg   " style=""></div>
                                   </div>
                                   <div class="col span_12  left">
-                                    <div
-                                      class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
-                                      data-shadow="none" data-border-radius="none" data-border-animation=""
-                                      data-border-animation-delay="" data-border-width="none" data-border-style="solid"
-                                      data-border-color="" data-bg-cover="" data-padding-pos="all"
-                                      data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
-                                      data-hover-bg-opacity="1" data-animation="" data-delay="0">
-                                      <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                          <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                              <h2
-                                                style="letter-spacing: -0.75px; font-weight: 700 !important; text-align: left;">
-                                                Tạo quest với
-                                                <span style="color: #ff5050;">iZi</span> Dành cho…
-                                              </h2>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <div class="vc_col-sm-2"></div>
                                     <div
                                       class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
                                       data-shadow="none" data-border-radius="none" data-border-animation=""
@@ -3199,8 +3234,7 @@
                                         <div class="wpb_wrapper">
                                           <div class="img-with-aniamtion-wrap center" data-max-width="100%"
                                             data-border-radius="none">
-                                            <div class="inner"><img data-shadow="none"
-                                                data-shadow-direction="middle"
+                                            <div class="inner"><img data-shadow="none" data-shadow-direction="middle"
                                                 class="lazyload img-with-animation device-img" data-delay="0"
                                                 height="982" width="506" data-animation="fade-in"
                                                 src='https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_506,h_982/https://fluz.app/wp-content/uploads/2020/02/Fluz-Mobile-app-home-screen-2.png'
@@ -3230,13 +3264,13 @@
                                                 Tạo quest và chọn thời gian đăng</h3>
                                               <p
                                                 style="text-align: left; padding-top: 20px; font-size: 16px; line-height: 1.5em; width: 275px;">
-                                                Chọn mục đích quest, luật chơi và format câu hỏi có sẵn để nhập nội
-                                                dung.</p>
+                                                Chọn mục đích quest, luật chơi và format câu hỏi có sẵn để nhập nội dung.</p>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="vc_col-sm-2"></div>
                                   </div>
                                 </div>
                               </div>
@@ -3249,27 +3283,7 @@
                                     <div class="row-bg   " style=""></div>
                                   </div>
                                   <div class="col span_12  left">
-                                    <div
-                                      class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
-                                      data-shadow="none" data-border-radius="none" data-border-animation=""
-                                      data-border-animation-delay="" data-border-width="none" data-border-style="solid"
-                                      data-border-color="" data-bg-cover="" data-padding-pos="all"
-                                      data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
-                                      data-hover-bg-opacity="1" data-animation="" data-delay="0">
-                                      <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                          <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                              <h2
-                                                style="letter-spacing: -0.75px; font-weight: 700 !important; text-align: left;">
-                                                Tạo quest với
-                                                <span style="color: #ff5050;">iZi</span> Dành cho…
-                                              </h2>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <div class="vc_col-sm-2"></div>
                                     <div
                                       class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
                                       data-shadow="none" data-border-radius="none" data-border-animation=""
@@ -3281,8 +3295,7 @@
                                         <div class="wpb_wrapper">
                                           <div class="img-with-aniamtion-wrap center" data-max-width="100%"
                                             data-border-radius="none">
-                                            <div class="inner"><img data-shadow="none"
-                                                data-shadow-direction="middle"
+                                            <div class="inner"><img data-shadow="none" data-shadow-direction="middle"
                                                 class="lazyload img-with-animation device-img" data-delay="0"
                                                 height="982" width="506" data-animation="fade-in"
                                                 src='https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_506,h_982/https://fluz.app/wp-content/uploads/2019/08/fluz-slider-step3.png'
@@ -3312,13 +3325,13 @@
                                                 Chọn phần thưởng hấp dẫn cho cộng đồng của bạn</h3>
                                               <p
                                                 style="text-align: left; padding-top: 20px; font-size: 16px; line-height: 1.5em; width: 275px;">
-                                                Có 3 loại phần thưởng: tiền, phiếu mua hàng điện tử hoặc giấy chứng nhận
-                                                hoàn thành.</p>
+                                                Có 3 loại phần thưởng: tiền, phiếu mua hàng điện tử hoặc giấy chứng nhận hoàn thành.</p>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="vc_col-sm-2"></div>
                                   </div>
                                 </div>
                               </div>
@@ -3331,27 +3344,7 @@
                                     <div class="row-bg   " style=""></div>
                                   </div>
                                   <div class="col span_12  left">
-                                    <div
-                                      class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
-                                      data-shadow="none" data-border-radius="none" data-border-animation=""
-                                      data-border-animation-delay="" data-border-width="none" data-border-style="solid"
-                                      data-border-color="" data-bg-cover="" data-padding-pos="all"
-                                      data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
-                                      data-hover-bg-opacity="1" data-animation="" data-delay="0">
-                                      <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                          <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                              <h2
-                                                style="letter-spacing: -0.75px; font-weight: 700 !important; text-align: left;">
-                                                Tạo quest với
-                                                <span style="color: #ff5050;">iZi</span> Dành cho…
-                                              </h2>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <div class="vc_col-sm-2"></div>
                                     <div
                                       class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
                                       data-shadow="none" data-border-radius="none" data-border-animation=""
@@ -3363,8 +3356,7 @@
                                         <div class="wpb_wrapper">
                                           <div class="img-with-aniamtion-wrap center" data-max-width="100%"
                                             data-border-radius="none">
-                                            <div class="inner"><img data-shadow="none"
-                                                data-shadow-direction="middle"
+                                            <div class="inner"><img data-shadow="none" data-shadow-direction="middle"
                                                 class="lazyload img-with-animation device-img" data-delay="0"
                                                 height="982" width="506" data-animation="fade-in"
                                                 src='https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_506,h_982/https://fluz.app/wp-content/uploads/2019/08/fluz-slider-step2.png'
@@ -3394,13 +3386,13 @@
                                                 Hoàn thành và chờ iZi duyệt nội dung</h3>
                                               <p
                                                 style="text-align: left; padding-top: 20px; font-size: 16px; line-height: 1.5em; width: 275px;">
-                                                iZi sẽ đảm bảo nội dung vui, hữu ích và phần thưởng có giá trị cho cộng
-                                                đồng.</p>
+                                                iZi sẽ đảm bảo nội dung vui, hữu ích và phần thưởng có giá trị cho cộng đồng.</p>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="vc_col-sm-2"></div>
                                   </div>
                                 </div>
                               </div>
@@ -3413,27 +3405,7 @@
                                     <div class="row-bg   " style=""></div>
                                   </div>
                                   <div class="col span_12  left">
-                                    <div
-                                      class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
-                                      data-shadow="none" data-border-radius="none" data-border-animation=""
-                                      data-border-animation-delay="" data-border-width="none" data-border-style="solid"
-                                      data-border-color="" data-bg-cover="" data-padding-pos="all"
-                                      data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
-                                      data-hover-bg-opacity="1" data-animation="" data-delay="0">
-                                      <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                          <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                              <h2
-                                                style="letter-spacing: -0.75px; font-weight: 700 !important; text-align: left;">
-                                                Tạo quest với
-                                                <span style="color: #ff5050;">iZi</span> Dành cho…
-                                              </h2>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <div class="vc_col-sm-2"></div>
                                     <div
                                       class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
                                       data-shadow="none" data-border-radius="none" data-border-animation=""
@@ -3445,8 +3417,7 @@
                                         <div class="wpb_wrapper">
                                           <div class="img-with-aniamtion-wrap center" data-max-width="100%"
                                             data-border-radius="none">
-                                            <div class="inner"><img data-shadow="none"
-                                                data-shadow-direction="middle"
+                                            <div class="inner"><img data-shadow="none" data-shadow-direction="middle"
                                                 class="lazyload img-with-animation device-img" data-delay="0"
                                                 height="982" width="506" data-animation="fade-in"
                                                 src='https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_506,h_982/https://fluz.app/wp-content/uploads/2019/08/fluz-slider-step4.png'
@@ -3476,13 +3447,13 @@
                                                 Nhận link quest và gửi đi cho cộng đồng của bạn</h3>
                                               <p
                                                 style="text-align: left; padding-top: 20px; font-size: 16px; line-height: 1.5em; width: 275px;">
-                                                Link có thể được chia sẻ đi bất kỳ kênh online hoặc offline. Thậm chí
-                                                tích hợp vào nền tảng của bạn.</p>
+                                                Link có thể được chia sẻ đi bất kỳ kênh online hoặc offline. Thậm chí tích hợp vào nền tảng của bạn.</p>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="vc_col-sm-2"></div>
                                   </div>
                                 </div>
                               </div>
@@ -3494,28 +3465,8 @@
                                   <div class="row-bg-wrap">
                                     <div class="row-bg   " style=""></div>
                                   </div>
-                                  <div class="col span_12  left">
-                                    <div
-                                      class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
-                                      data-shadow="none" data-border-radius="none" data-border-animation=""
-                                      data-border-animation-delay="" data-border-width="none" data-border-style="solid"
-                                      data-border-color="" data-bg-cover="" data-padding-pos="all"
-                                      data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg=""
-                                      data-hover-bg-opacity="1" data-animation="" data-delay="0">
-                                      <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                          <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                              <h2
-                                                style="letter-spacing: -0.75px; font-weight: 700 !important; text-align: left;">
-                                                Tạo quest với
-                                                <span style="color: #ff5050;">iZi</span> Dành cho…
-                                              </h2>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <div class="col span_12">
+                                   <div class="vc_col-sm-2"></div>
                                     <div
                                       class="vc_col-sm-4 wpb_column column_container vc_column_container col no-extra-padding"
                                       data-shadow="none" data-border-radius="none" data-border-animation=""
@@ -3563,13 +3514,13 @@
                                                 Xem số liệu và báo cáo chi tiết</h3>
                                               <p
                                                 style="text-align: left; padding-top: 20px; font-size: 16px; line-height: 1.5em; width: 275px;">
-                                                iZi trả báo cáo giúp bạn đánh giá hiệu quả nội dung, tỉ lệ tương tác,
-                                                hoàn thành và quay lại của cộng đồng.</p>
+                                                iZi trả báo cáo giúp bạn đánh giá hiệu quả nội dung, tỉ lệ tương tác, hoàn thành và quay lại của cộng đồng.</p>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="vc_col-sm-2"></div>
                                   </div>
                                 </div>
                               </div>
@@ -3623,8 +3574,8 @@
                                       </div>
                                       <div class="wpb_text_column wpb_content_element  vc_custom_1602813287499">
                                         <div class="wpb_wrapper">
-                                          <p style="text-align: center;"><span
-                                              style="color: #828388; line-height: 1.75em;">Chơi trước học sau với trải nghiệm trò chơi và đa dạng phần thưởng. </span></p>
+                                          <p style="text-align: center; line-height: 1.45em; margin-top: 8px;"><span
+                                              style="color: #828388;">Chơi trước học sau với trải nghiệm trò chơi và đa dạng phần thưởng.</span></p>
                                         </div>
                                       </div>
                                       <div class="img-with-aniamtion-wrap center" data-max-width="100%"
@@ -3642,8 +3593,7 @@
                                       </div><a
                                         class="nectar-button jumbo regular accent-color  regular-button cta-color"
                                         style="margin-top: 20px; margin-right: 0px; margin-left: 0px; visibility: visible;"
-                                        href="/" data-color-override="false"
-                                        data-hover-color-override="false"
+                                        href="/" data-color-override="false" data-hover-color-override="false"
                                         data-hover-text-color-override="#fff"><span>XEM THÊM</span></a>
                                     </div>
                                   </div>
@@ -3666,8 +3616,8 @@
                                       </div>
                                       <div class="wpb_text_column wpb_content_element  vc_custom_1602813325571">
                                         <div class="wpb_wrapper">
-                                          <p style="text-align: center;"><span
-                                              style="color: #828388; line-height: 1.75em;">Nội dung mang tính giáo dục và cá nhân hoá cao.</span></p>
+                                          <p style="text-align: center; line-height: 1.45em; margin-top: 8px;"><span
+                                              style="color: #828388;">Nội dung mang tính giáo dục và cá nhân hoá cao.</span></p>
                                         </div>
                                       </div>
                                       <div class="img-with-aniamtion-wrap center" data-max-width="100%"
@@ -3685,8 +3635,7 @@
                                       </div><a
                                         class="nectar-button jumbo regular accent-color  regular-button cta-color"
                                         style="margin-top: 20px; margin-right: 0px; margin-left: 0px; visibility: visible;"
-                                        href="/" data-color-override="false"
-                                        data-hover-color-override="false"
+                                        href="/" data-color-override="false" data-hover-color-override="false"
                                         data-hover-text-color-override="#fff"><span>XEM THÊM</span></a>
                                     </div>
                                   </div>
@@ -3709,8 +3658,9 @@
                                       </div>
                                       <div class="wpb_text_column wpb_content_element  vc_custom_1602813372243">
                                         <div class="wpb_wrapper">
-                                          <p style="text-align: center;"><span
-                                              style="color: #828388; line-height: 1.75em;">Dành cho cả khách hàng và nhân viên. Hiểu rõ xu hướng và sở thích nội dung để tăng retention.</span></p>
+                                          <p style="text-align: center; line-height: 1.45em; margin-top: 8px;"><span
+                                              style="color: #828388;">Dành cho cả khách hàng và nhân viên để tăng tương tác & quay lại.</span>
+                                          </p>
                                         </div>
                                       </div>
                                       <div class="img-with-aniamtion-wrap center" data-max-width="100%"
@@ -3728,15 +3678,14 @@
                                       </div><a
                                         class="nectar-button jumbo regular accent-color  regular-button cta-color"
                                         style="margin-top: 20px; margin-right: 0px; margin-left: 0px; visibility: visible;"
-                                        href="/" data-color-override="false"
-                                        data-hover-color-override="false"
+                                        href="/" data-color-override="false" data-hover-color-override="false"
                                         data-hover-text-color-override="#fff"><span>XEM THÊM</span></a>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                           
+
                           </div>
                         </div>
                       </div>
@@ -3798,67 +3747,11 @@
                                 </div>
                               </div>
                             </div>
-
-                            <div id="fws_62b32a07061e4" data-midnight="" data-column-margin="default"
-                              class="wpb_row vc_row-fluid vc_row inner_row  vc_row-o-content-middle standard_section   "
-                              style="margin: 0 auto; display: flex; justify-content: center;">
-                              <div class="row-bg-wrap">
-                                <div class="row-bg"></div>
-                              </div>
-                              <div class="row_col_wrap_6_inner col span_6 center">
-                                <form id="submit-to-google-sheet-2">
-                                  <div class="row">
-                                    <div class="col-lg-12 form-group">
-                                      <div class="translate-bottom delay-500">
-                                        <input type="text" class="form-control" placeholder="Họ và tên" name="name"
-                                          data-error="Name field is required" required="">
-                                        <div class="help-block with-errors"></div>
-                                      </div>
-                                    </div>
-                                    <div class="col-lg-12 form-group">
-                                      <div class="translate-bottom delay-500">
-                                        <input type="text" class="form-control" placeholder="Số điện thoại" name="phone"
-                                          data-error="Name field is required" required="">
-                                        <div class="help-block with-errors"></div>
-                                      </div>
-                                    </div>
-                                    <div class="col-lg-12 form-group">
-                                      <div class="translate-bottom delay-700">
-                                        <input type="email" class="form-control" placeholder="Email" name="email"
-                                          data-error="Email field is required" required="">
-                                        <div class="help-block with-errors"></div>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-lg-12 form-group">
-                                      <div class="translate-bottom delay-1100">
-                                        <textarea name="message" id="form-message" class="form-control textarea"
-                                          placeholder="Nội dung" cols="30" rows="4"
-                                          data-error="Message field is required" required=""></textarea>
-                                        <div class="help-block with-errors"></div>
-                                      </div>
-                                    </div>
-                                    <div class="col-lg-12 form-group">
-                                      <div class="translate-bottom delay-1300">
-                                        <button style="font-family: 'Chakra Petch'; font-size: 20px; font-weight: bold;"
-                                          type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
-                                          <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner"
-                                            style="display: none;"></i>
-                                          GỬI</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="form-response" id="id-submit-google-form-message-2"
-                                    style="color: #32ea73;">
-                                    Thành công
-                                  </div>
-                                </form>
-
-                              </div>
-                            </div>
+                            
+                            
                             <div id="fws_62bccdc4a57aa" data-column-margin="default" data-midnight="dark"
                               class="wpb_row vc_row-fluid vc_row full-width-section standard_section "
-                              style="padding-top: 100px; padding-bottom: 100px; ">
+                              style="padding-bottom: 100px; ">
                               <div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false">
                                 <div class="inner-wrap">
                                   <div class="row-bg using-bg-color" style="background-color: #ffffff; "></div>
@@ -3890,123 +3783,100 @@
                                             <div class="inner-toggle-wrap">
                                               <div class="wpb_text_column wpb_content_element ">
                                                 <div class="wpb_wrapper">
-                                                  <p>iZi là nền tảng giải trí với kiến thức được thành lập
-                                                    từ tháng 02/2021. Chúng tôi muốn tạo ra một “ngôi trường mở
-                                                    bằng công nghệ” - nơi bất kì ai đều có thể chia sẻ và đón
-                                                    nhận tri thức một cách đầy vui vẻ và tự do.</h4>
-
+                                                  <p>iZi là nền tảng edutainment - chơi mà học, được xây dựng dưới dạng trò chơi nhập vai giải đố săn thưởng. iZi cung cấp công cụ cho các Creator (là cá nhân, công ty hoặc tổ chức) tạo các “Quest kiến thức” và treo thưởng để truyền tải thông tin tới cộng đồng của họ; đồng thời tạo môi trường trò chơi để cộng đồng tương tác mạnh mẽ với các “Quest” này.</h4>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="toggle default" data-inner-wrap="true">
-                                          <h3><a href="#"><i class="icon-plus-sign"></i>Tôi có thể học trên iZi như thế
-                                              nào?</a></h3>
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Sử dụng iZi để làm gì?</a></h3>
                                           <div>
                                             <div class="inner-toggle-wrap">
                                               <div class="wpb_text_column wpb_content_element ">
                                                 <div class="wpb_wrapper">
-                                                  <p>Bạn có thể xem các video là các đoạn đối thoại và tranh luận giữa
-                                                    hai chuyên gia kéo dài 30-90 phút. Xen kẽ giữa các đoạn gây cấn là
-                                                    những câu hỏi để bạn có thể tương tác và xem bạn bè và cộng đồng
-                                                    cùng trả lời thế nào. Bạn có thể đặt câu hỏi cho chuyên gia và click
-                                                    chọn những cơ hội được các chuyên gia chia sẻ trong video.
-                                                    <br />Ngoài ra, bạn có thể thoải mái lướt xem các đoạn video tranh
-                                                    luận ngắn khác.
+                                                  <p>Dùng các Quest format trên iZi với 2 mục đích chính:
                                                   </p>
+                                                  <ul>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       <b>- Xây dựng thương hiệu (Branding):</b>  Kể câu chuyện thương hiệu hoặc giới thiệu sản phẩm/dịch vụ của bạn bằng kiến thức liên quan và có ý nghĩa.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       <b>- Đào tạo nhập môn (Onboarding):</b>  Truyền tải kiến thức nhập môn với đội ngũ nhân viên/nhóm người dùng mới ra vào liên tục.
+                                                      </p>
+                                                    </li>
+                                                  </ul>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="toggle default" data-inner-wrap="true">
-                                          <h3><a href="#"><i class="icon-plus-sign"></i>Các chuyên gia trên iZi là những
-                                              ai?</a></h3>
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Tại sao nên sử dụng iZi?</a></h3>
                                           <div>
                                             <div class="inner-toggle-wrap">
                                               <div class="wpb_text_column wpb_content_element ">
                                                 <div class="wpb_wrapper">
-                                                  <p>Họ là những người thông minh, duyên dáng, nhiều kiến thức và kinh
-                                                    nghiệm trong lĩnh vực Tài Chính cá nhân và Các xu hướng nghề nghiệp
-                                                    mới: Chuyên gia tài chính, Nhà sáng lập, Doanh nhân, Nhà đầu tư.</p>
+                                                  <p>iZi siêu vui và tương tác siêu cao:
+                                                  </p>
+                                                  <ul>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       <b>- Cho người chơi Quest:</b>  Chưa bao giờ kiến thức có thể trở nên thú vị hơn với thiết kế trò chơi, phần thưởng đa dạng và tính cá nhân hoá.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       <b>- Cho người tạo Quest:</b>  Click chọn format game có sẵn, nhập vào nội dung có giá trị giáo dục và đăng trong tích tắc với báo cáo phân tích hiệu quả chi tiết.
+                                                      </p>
+                                                    </li>
+                                                  </ul>
                                                 </div>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="toggle default" data-inner-wrap="true">
-                                          <h3><a href="#"><i class="icon-plus-sign"></i>Tôi đăng ký và thanh toán như
-                                              thế nào?</a></h3>
+                                          <h3><a href="#"><i class="icon-plus-sign"></i>Sử dụng iZi như thế nào?</a></h3>
                                           <div>
                                             <div class="inner-toggle-wrap">
                                               <div class="wpb_text_column wpb_content_element ">
                                                 <div class="wpb_wrapper">
-                                                  <p>Tải và sử dụng ứng dụng iZi hoàn toàn miễn phí từ ngày
-                                                    8/8/2022 trên Google Play. Để đăng ký tham khóa học Làm chủ
-                                                    Tài chính Cá nhân trên ứng dụng, vui lòng thanh toán theo 01
-                                                    trong 02 cách sau:</p>
-                                                  <div>
-                                                    <h5
-                                                      style="font-size: 16px; margin-top: -5px; color: #ff5050; font-weight: bold; letter-spacing: -0.5px; text-align: left;">
-                                                      Chuyển khoản</h5>
-                                                    <ul>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Ngân hàng: Techcombank - Ngân hàng TMCP Kỹ thương Việt Nam
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Chi nhánh: Pasteur
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Đơn vị thụ hưởng: CÔNG TY TRÁCH NHIỆM HỮU HẠN IZI
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Số tài khoản: 19036717968013
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Nội dung chuyển khoản: [Họ và tên]-[SĐT đăng ký]-TCCN
-                                                        </p>
-                                                      </li>
-                                                    </ul>
-                                                    <h5
-                                                      style="font-size: 16px; margin-top: 32px; color: #ff5050; font-weight: bold; letter-spacing: -0.5px; text-align: left;">
-                                                      MoMo</h5>
-                                                    <ul>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Số điện thoại: 0913228397
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Người nhận: NGUYEN DUC HIEU
-                                                        </p>
-                                                      </li>
-                                                      <li>
-                                                        <p
-                                                          style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
-                                                          Nội dung chuyển: [Họ và tên]-[SĐT đăng ký]-TCCN
-                                                        </p>
-                                                      </li>
-
-                                                    </ul>
-                                                  </div>
+                                                  <p>Rất dễ và tiện:
+                                                  </p>
+                                                  <ul>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       - Click vào link mà ai đó gửi cho bạn và chơi ngay trên web điện thoại
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       - Hoặc tải app iZi thì tha hồ mà chơi
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       - Hoặc chơi trực tiếp trên web/app của tổ chức của bạn luôn đó!
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <p
+                                                        style="color: #2b2b2b; letter-spacing: -0.45px!important; font-weight: regular!important; padding-top: 5px; text-align: left;">
+                                                       - Còn muốn tạo và quản lý hiệu quả nội dung thì lên desktop web làm cho thoải mái nhé!
+                                                      </p>
+                                                    </li>
+                                                  </ul>
                                                 </div>
                                               </div>
                                             </div>
@@ -4016,6 +3886,71 @@
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+                            <div id="fws_62b32a07061e4" data-midnight="" data-column-margin="default"
+                              class="wpb_row vc_row-fluid vc_row inner_row  vc_row-o-content-middle standard_section   "
+                              style="margin: 0 auto; display: flex; justify-content: center;">
+                              <div class="row-bg-wrap">
+                                <div class="row-bg"></div>
+                              </div>
+                              <div class="row_col_wrap_6_inner col span_6 center">
+                                <form id="submit-to-google-sheet-2">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="wpb_wrapper">
+                              
+                                        <h2 class="amp" style="line-height: 40px; text-transform: inherit; text-align: center;">
+                                          Liên hệ với <span style="color: #ff5050;">iZi</span></h2>
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group" style="margin-top: 32px;">
+                                      <div class="translate-bottom delay-500">
+                                        <input type="text" class="form-control" placeholder="Họ và tên" name="name"
+                                          data-error="Name field is required" required="">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group" style="display: none;">
+                                      <div class="translate-bottom delay-500">
+                                        <input type="text" class="form-control" placeholder="Số điện thoại" name="phone"
+                                          data-error="Name field is required">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-700">
+                                        <input type="email" class="form-control" placeholder="Email" name="email"
+                                          data-error="Email field is required" required="">
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-1100">
+                                        <textarea name="message" id="form-message" class="form-control textarea"
+                                          placeholder="Nội dung" cols="30" rows="4"
+                                          data-error="Message field is required"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                      <div class="translate-bottom delay-1300">
+                                        <button style="font-family: 'Chakra Petch'; font-size: 20px; font-weight: bold;"
+                                          type="submit" id="id-submit-google-form-2" class="fxt-btn fxt-btn-fill">
+                                          <i id="id-fa-spin-2" class="fas fa-circle-notch fa-spin spinner"
+                                            style="display: none;"></i>
+                                          GỬI</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-response" id="id-submit-google-form-message-2"
+                                    style="color: #32ea73;">
+                                    Thành công
+                                  </div>
+                                </form>
+
                               </div>
                             </div>
                             <div id="fws_62c74c64c1caf" data-midnight="light" data-bg-mobile-hidden=""
