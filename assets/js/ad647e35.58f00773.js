@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkinfo=self.webpackChunkinfo||[]).push([[7857],{8862:a=>{a.exports=JSON.parse('{"label":"izi","permalink":"/blog/tags/izi","allTagsPath":"/blog/tags","count":1}')}}]);
