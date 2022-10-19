@@ -6,14 +6,10 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { HomepageFeatures } from "@site/src/components/features";
-import {useColorMode} from '@docusaurus/theme-common';
+import Translate from "@docusaurus/Translate";
 
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  const {colorMode, setColorMode} = useColorMode();
-  console.log(colorMode)
-
   return (
     <header
       className={clsx("hero", 'hero--primary')}
@@ -29,8 +25,8 @@ function HomepageHeader() {
       `}
     >
       <div className="container">
-        <h2 className="hero__title">{siteConfig.title}</h2>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h2 className="hero__title"><Translate>site_title</Translate></h2>
+        <p className="hero__subtitle"><Translate>site_subtitle</Translate></p>
         <div
           css={css`
             display: flex;
@@ -39,7 +35,7 @@ function HomepageHeader() {
           `}
         >
           <Link className="button button--secondary button--lg" to="/blog">
-            iZi Blog
+            <Translate>site_cta</Translate>
           </Link>
         </div>
       </div>
@@ -51,8 +47,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description={siteConfig.tagline}
     >
       <HomepageHeader />
       <main>

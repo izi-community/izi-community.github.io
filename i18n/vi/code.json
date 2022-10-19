@@ -262,5 +262,14 @@
   },
   "feature_3": {
     "message": "Gắn kết cộng đồng ở mọi phương diện"
+  },
+  "site_title": {
+    "message": "Kho thông tin iZi"
+  },
+  "site_subtitle": {
+    "message": "Nơi tổng hợp kiến thức và thông tin của nền tảng chơi-mà-học iZi và cộng đồng iZi"
+  },
+  "site_cta": {
+    "message": "Đi đến Blog"
   }
 }

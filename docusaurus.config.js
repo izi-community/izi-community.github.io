@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "iZi Knowledge Base",
+  title: "iZi | Info",
   tagline:
     "iZi is a gamified edutainment platform allowing users to solve knowledge Quests and earn rewards",
   url: "https://info.izi.community",
@@ -81,6 +81,7 @@ const config = {
         logo: {
           alt: "iZi Logo",
           src: "img/izi.svg",
+          href: "https://izi.community"
         },
         items: [
           // {

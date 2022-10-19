@@ -262,5 +262,14 @@
   },
   "feature_3": {
     "message": "Engage communities in all senses"
+  },
+  "site_title": {
+    "message": "iZi Knowledge base"
+  },
+  "site_subtitle": {
+    "message": "Knowledge base and most updated activities of iZi edutainment platform and iZi community."
+  },
+  "site_cta": {
+    "message": "Go to Blog"
   }
 }
