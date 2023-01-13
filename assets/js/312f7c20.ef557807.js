@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkinfo=self.webpackChunkinfo||[]).push([[6475],{9634:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/journey","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
