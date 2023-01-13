@@ -92,11 +92,6 @@ const config = {
             type: "localeDropdown",
             position: "right",
           },
-          {
-            href: "https://github.com/izi-community",
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       footer: {
@@ -109,10 +104,6 @@ const config = {
                 label: "Home",
                 href: "https://izi.community",
               },
-              // {
-              //   label: "Create",
-              //   href: "https://creator.izi.community",
-              // },
               {
                 label: "Play",
                 href: "https://play.izi.community",

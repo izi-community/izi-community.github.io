@@ -28,16 +28,12 @@
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/iZicommunity"
   },
   "copyright": {
-    "message": "Copyright © 2023 iZi. Built with Docusaurus.",
+    "message": "Copyright © 2023 iZi.",
     "description": "The footer copyright"
   },
   "link.item.label.Home": {
     "message": "Trang chủ",
     "description": "The label of footer link with label=Home linking to https://izi.community"
-  },
-  "link.item.label.Create": {
-    "message": "Tạo nội dung",
-    "description": "The label of footer link with label=Create linking to https://creator.izi.community"
   },
   "link.item.label.Play": {
     "message": "Chơi",
