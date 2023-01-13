@@ -7,8 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "iZi | Info",
-  tagline:
-    "iZi is a gamified edutainment platform allowing users to solve knowledge Quests and earn rewards",
+  tagline: "iZi is a gamified edutainment platform allowing users to solve knowledge Quests and earn rewards",
   url: "https://info.izi.community",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -55,15 +54,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/izi-community/izi-community.github.io/tree/main",
+          editUrl: "https://github.com/izi-community/izi-community.github.io/tree/main",
         },
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/izi-community/izi-community.github.io/tree/main",
+          editUrl: "https://github.com/izi-community/izi-community.github.io/tree/main",
           sortPosts: "descending",
         },
         theme: {
@@ -81,7 +78,7 @@ const config = {
         logo: {
           alt: "iZi Logo",
           src: "img/izi.svg",
-          href: "https://izi.community"
+          href: "https://izi.community",
         },
         items: [
           // {
@@ -112,10 +109,10 @@ const config = {
                 label: "Home",
                 href: "https://izi.community",
               },
-              {
-                label: "Create",
-                href: "https://creator.izi.community",
-              },
+              // {
+              //   label: "Create",
+              //   href: "https://creator.izi.community",
+              // },
               {
                 label: "Play",
                 href: "https://play.izi.community",
@@ -143,17 +140,8 @@ const config = {
               },
             ],
           },
-          {
-            title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/izi-community",
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} iZi. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} iZi.`,
       },
       prism: {
         theme: lightCodeTheme,

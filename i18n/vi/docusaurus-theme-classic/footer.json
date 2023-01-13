@@ -27,12 +27,8 @@
     "message": "Twitter",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/iZicommunity"
   },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/izi-community"
-  },
   "copyright": {
-    "message": "Copyright © 2022 iZi. Built with Docusaurus.",
+    "message": "Copyright © 2023 iZi. Built with Docusaurus.",
     "description": "The footer copyright"
   },
   "link.item.label.Home": {
