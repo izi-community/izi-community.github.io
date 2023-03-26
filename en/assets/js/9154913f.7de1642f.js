@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkinfo=self.webpackChunkinfo||[]).push([[229],{4945:e=>{e.exports=JSON.parse('{"label":"education","permalink":"/en/blog/tags/education","allTagsPath":"/en/blog/tags","count":3}')}}]);
